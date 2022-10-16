@@ -1,0 +1,1037 @@
+Sun Oct 16 10:54:49 2022  [0mbatch_size: 10[0m
+Sun Oct 16 10:54:49 2022  [0mclass_num: 2[0m
+Sun Oct 16 10:54:49 2022  [35mconfig: ./config/adhd/adhd_dstanet.yaml[0m
+Sun Oct 16 10:54:49 2022  [0mcuda_visible_device: 0[0m
+Sun Oct 16 10:54:49 2022  [0mdata: adni[0m
+Sun Oct 16 10:54:49 2022  [0mdata_param: {'train_data_param': {'data_path': '/data/datasets/SyntheticDataForKernelTransformer/train_data.npy', 'label_path': '/data/datasets/SyntheticDataForKernelTransformer/train_label.pkl', 'random_choose': True, 'center_choose': False, 'random_noise': True, 'random_scale': True, 'window_size': 200, 'final_size': 180, 'num_skip_frame': None, 'decouple_spatial': False}, 'val_data_param': {'data_path': '/data/datasets/SyntheticDataForKernelTransformer/test_data.npy', 'label_path': '/data/datasets/SyntheticDataForKernelTransformer/test_label.pkl', 'random_choose': True, 'center_choose': False, 'random_noise': False, 'random_scale': False, 'window_size': 200, 'final_size': 180, 'num_skip_frame': None, 'decouple_spatial': False, 'augtimes': 1}}[0m
+Sun Oct 16 10:54:49 2022  [0mdebug: False[0m
+Sun Oct 16 10:54:49 2022  [0mdevice_id: [0][0m
+Sun Oct 16 10:54:49 2022  [0mfreeze_keys: [][0m
+Sun Oct 16 10:54:49 2022  [0mgrad_clip: 0[0m
+Sun Oct 16 10:54:49 2022  [0mignore_weights: ['fc'][0m
+Sun Oct 16 10:54:49 2022  [0mlabel_smoothing_num: 0[0m
+Sun Oct 16 10:54:49 2022  [0mlast_model: None[0m
+Sun Oct 16 10:54:49 2022  [0mloss: cross_entropy[0m
+Sun Oct 16 10:54:49 2022  [0mlr: 0.1[0m
+Sun Oct 16 10:54:49 2022  [0mlr_decay_ratio: 0.1[0m
+Sun Oct 16 10:54:49 2022  [0mlr_multi_keys: [][0m
+Sun Oct 16 10:54:49 2022  [0mlr_param: {'step': [60, 80]}[0m
+Sun Oct 16 10:54:49 2022  [0mlr_scheduler: reduce_by_epoch[0m
+Sun Oct 16 10:54:49 2022  [0mls_param: {}[0m
+Sun Oct 16 10:54:49 2022  [0mmax_epoch: 100[0m
+Sun Oct 16 10:54:49 2022  [0mmix_up_num: 0[0m
+Sun Oct 16 10:54:49 2022  [0mmode: train_val[0m
+Sun Oct 16 10:54:49 2022  [0mmodel: dstanet[0m
+Sun Oct 16 10:54:49 2022  [0mmodel_param: {'num_point': 42, 'num_frame': 180, 'num_subset': 3, 'num_channel': 6, 'num_person': 1, 'glo_reg_s': False, 'att_s': True, 'glo_reg_t': False, 'att_t': False, 'dropout': 0, 'attentiondrop': 0, 'dropout2d': 0, 'use_spatial_att': True, 'use_temporal_att': False, 'use_pet': True, 'use_pes': True, 'use_kernel_attention': 5, 'config': [[64, 64, 16, 1], [64, 64, 16, 1], [64, 128, 32, 2], [128, 128, 32, 1]]}[0m
+Sun Oct 16 10:54:49 2022  [0mmodel_saved_name: ./work_dir/adni/[0m
+Sun Oct 16 10:54:49 2022  [0mnum_epoch_per_save: 200[0m
+Sun Oct 16 10:54:49 2022  [0mnum_subsets: 3[0m
+Sun Oct 16 10:54:49 2022  [0moptimizer: sgd_nev[0m
+Sun Oct 16 10:54:49 2022  [0mpin_memory: False[0m
+Sun Oct 16 10:54:49 2022  [0mpre_trained_model: None[0m
+Sun Oct 16 10:54:49 2022  [0mstep: [80][0m
+Sun Oct 16 10:54:49 2022  [0mtrain: classify[0m
+Sun Oct 16 10:54:49 2022  [0mval_first: False[0m
+Sun Oct 16 10:54:49 2022  [0mwarm_up_epoch: 5[0m
+Sun Oct 16 10:54:49 2022  [0mwd: 0.0005[0m
+Sun Oct 16 10:54:49 2022  [0mworker: 32[0m
+Sun Oct 16 10:54:49 2022  Operation finished
+
+Sun Oct 16 10:54:49 2022  work dir: ./work_dir/adni/
+Sun Oct 16 10:54:49 2022  Model load finished: dstanet mode: train
+Sun Oct 16 10:54:53 2022  copy model to gpu
+Sun Oct 16 10:54:53 2022  Using SGD with momentum 0.9and nesterov
+Sun Oct 16 10:54:53 2022  no pretrained optimizer is loaded
+Sun Oct 16 10:54:53 2022  Using loss: cross_entropy
+Sun Oct 16 10:54:53 2022  Data load finished: adni
+Sun Oct 16 10:54:53 2022  lr scheduler: Reduce by epoch, step: [60, 80]
+Sun Oct 16 10:54:53 2022  start epoch 0 -> max epoch 100
+Sun Oct 16 10:54:53 2022  Current lr: 0.02
+Sun Oct 16 10:54:56 2022  Training finished for epoch 0
+Sun Oct 16 10:54:58 2022  Validation finished for epoch 0
+Sun Oct 16 10:54:58 2022  EPOCH: 0, ACC: 0.466667, LOSS: 14.058505, EPOCH_TIME: 5.804136, LR: 0.02, BEST_ACC: 0.466667
+Sun Oct 16 10:54:58 2022  Current lr: 0.04
+Sun Oct 16 10:55:39 2022  [0mbatch_size: 10[0m
+Sun Oct 16 10:55:39 2022  [0mclass_num: 2[0m
+Sun Oct 16 10:55:39 2022  [35mconfig: ./config/adhd/adhd_dstanet.yaml[0m
+Sun Oct 16 10:55:39 2022  [0mcuda_visible_device: 0[0m
+Sun Oct 16 10:55:39 2022  [0mdata: adni[0m
+Sun Oct 16 10:55:39 2022  [0mdata_param: {'train_data_param': {'data_path': '/data/datasets/SyntheticDataForKernelTransformer/train_data.npy', 'label_path': '/data/datasets/SyntheticDataForKernelTransformer/train_label.pkl', 'random_choose': True, 'center_choose': False, 'random_noise': True, 'random_scale': True, 'window_size': 200, 'final_size': 180, 'num_skip_frame': None, 'decouple_spatial': False}, 'val_data_param': {'data_path': '/data/datasets/SyntheticDataForKernelTransformer/test_data.npy', 'label_path': '/data/datasets/SyntheticDataForKernelTransformer/test_label.pkl', 'random_choose': True, 'center_choose': False, 'random_noise': False, 'random_scale': False, 'window_size': 200, 'final_size': 180, 'num_skip_frame': None, 'decouple_spatial': False, 'augtimes': 1}}[0m
+Sun Oct 16 10:55:39 2022  [0mdebug: False[0m
+Sun Oct 16 10:55:39 2022  [0mdevice_id: [0][0m
+Sun Oct 16 10:55:39 2022  [0mfreeze_keys: [][0m
+Sun Oct 16 10:55:39 2022  [0mgrad_clip: 0[0m
+Sun Oct 16 10:55:39 2022  [0mignore_weights: ['fc'][0m
+Sun Oct 16 10:55:39 2022  [0mlabel_smoothing_num: 0[0m
+Sun Oct 16 10:55:39 2022  [0mlast_model: None[0m
+Sun Oct 16 10:55:39 2022  [0mloss: cross_entropy[0m
+Sun Oct 16 10:55:39 2022  [0mlr: 0.1[0m
+Sun Oct 16 10:55:39 2022  [0mlr_decay_ratio: 0.1[0m
+Sun Oct 16 10:55:39 2022  [0mlr_multi_keys: [][0m
+Sun Oct 16 10:55:39 2022  [0mlr_param: {'step': [60, 80]}[0m
+Sun Oct 16 10:55:39 2022  [0mlr_scheduler: reduce_by_epoch[0m
+Sun Oct 16 10:55:39 2022  [0mls_param: {}[0m
+Sun Oct 16 10:55:39 2022  [0mmax_epoch: 100[0m
+Sun Oct 16 10:55:39 2022  [0mmix_up_num: 0[0m
+Sun Oct 16 10:55:39 2022  [0mmode: train_val[0m
+Sun Oct 16 10:55:39 2022  [0mmodel: dstanet[0m
+Sun Oct 16 10:55:39 2022  [0mmodel_param: {'num_point': 42, 'num_frame': 180, 'num_subset': 3, 'num_channel': 6, 'num_person': 1, 'glo_reg_s': False, 'att_s': True, 'glo_reg_t': False, 'att_t': False, 'dropout': 0, 'attentiondrop': 0, 'dropout2d': 0, 'use_spatial_att': True, 'use_temporal_att': False, 'use_pet': True, 'use_pes': True, 'use_kernel_attention': 5, 'config': [[64, 64, 16, 1], [64, 64, 16, 1], [64, 128, 32, 2], [128, 128, 32, 1]]}[0m
+Sun Oct 16 10:55:39 2022  [0mmodel_saved_name: ./work_dir/adni/[0m
+Sun Oct 16 10:55:39 2022  [0mnum_epoch_per_save: 200[0m
+Sun Oct 16 10:55:39 2022  [0mnum_subsets: 3[0m
+Sun Oct 16 10:55:39 2022  [0moptimizer: sgd_nev[0m
+Sun Oct 16 10:55:39 2022  [0mpin_memory: False[0m
+Sun Oct 16 10:55:39 2022  [0mpre_trained_model: None[0m
+Sun Oct 16 10:55:39 2022  [0mstep: [80][0m
+Sun Oct 16 10:55:39 2022  [0mtrain: classify[0m
+Sun Oct 16 10:55:39 2022  [0mval_first: False[0m
+Sun Oct 16 10:55:39 2022  [0mwarm_up_epoch: 5[0m
+Sun Oct 16 10:55:39 2022  [0mwd: 0.0005[0m
+Sun Oct 16 10:55:39 2022  [0mworker: 32[0m
+Sun Oct 16 10:55:39 2022  Operation finished
+
+Sun Oct 16 10:55:39 2022  work dir: ./work_dir/adni/
+Sun Oct 16 10:55:40 2022  Model load finished: dstanet mode: train
+Sun Oct 16 10:55:43 2022  copy model to gpu
+Sun Oct 16 10:55:43 2022  Using SGD with momentum 0.9and nesterov
+Sun Oct 16 10:55:43 2022  no pretrained optimizer is loaded
+Sun Oct 16 10:55:43 2022  Using loss: cross_entropy
+Sun Oct 16 10:55:43 2022  Data load finished: adni
+Sun Oct 16 10:55:43 2022  lr scheduler: Reduce by epoch, step: [60, 80]
+Sun Oct 16 10:55:43 2022  start epoch 0 -> max epoch 100
+Sun Oct 16 10:55:43 2022  Current lr: 0.02
+Sun Oct 16 10:55:46 2022  Training finished for epoch 0
+Sun Oct 16 10:55:49 2022  Validation finished for epoch 0
+Sun Oct 16 10:55:49 2022  EPOCH: 0, ACC: 0.466667, LOSS: 14.058505, EPOCH_TIME: 5.393754, LR: 0.02, BEST_ACC: 0.466667
+Sun Oct 16 10:55:49 2022  Current lr: 0.04
+Sun Oct 16 11:22:46 2022  [0mbatch_size: 10[0m
+Sun Oct 16 11:22:46 2022  [0mclass_num: 2[0m
+Sun Oct 16 11:22:46 2022  [35mconfig: ./config/config.yaml[0m
+Sun Oct 16 11:22:46 2022  [0mcuda_visible_device: 0[0m
+Sun Oct 16 11:22:46 2022  [0mdata: adni[0m
+Sun Oct 16 11:22:46 2022  [0mdata_param: {'train_data_param': {'data_path': '/data/datasets/SyntheticDataForKernelTransformer/train_data.npy', 'label_path': '/data/datasets/SyntheticDataForKernelTransformer/train_label.pkl', 'random_choose': True, 'center_choose': False, 'random_noise': True, 'random_scale': True, 'window_size': 200, 'final_size': 180, 'num_skip_frame': None, 'decouple_spatial': False}, 'val_data_param': {'data_path': '/data/datasets/SyntheticDataForKernelTransformer/test_data.npy', 'label_path': '/data/datasets/SyntheticDataForKernelTransformer/test_label.pkl', 'random_choose': True, 'center_choose': False, 'random_noise': False, 'random_scale': False, 'window_size': 200, 'final_size': 180, 'num_skip_frame': None, 'decouple_spatial': False, 'augtimes': 1}}[0m
+Sun Oct 16 11:22:46 2022  [0mdebug: False[0m
+Sun Oct 16 11:22:46 2022  [0mdevice_id: [0][0m
+Sun Oct 16 11:22:46 2022  [0mfreeze_keys: [][0m
+Sun Oct 16 11:22:46 2022  [0mgrad_clip: 0[0m
+Sun Oct 16 11:22:46 2022  [0mignore_weights: ['fc'][0m
+Sun Oct 16 11:22:46 2022  [0mlabel_smoothing_num: 0[0m
+Sun Oct 16 11:22:46 2022  [0mlast_model: None[0m
+Sun Oct 16 11:22:46 2022  [0mloss: cross_entropy[0m
+Sun Oct 16 11:22:46 2022  [0mlr: 0.1[0m
+Sun Oct 16 11:22:46 2022  [0mlr_decay_ratio: 0.1[0m
+Sun Oct 16 11:22:46 2022  [0mlr_multi_keys: [][0m
+Sun Oct 16 11:22:46 2022  [0mlr_param: {'step': [60, 80]}[0m
+Sun Oct 16 11:22:46 2022  [0mlr_scheduler: reduce_by_epoch[0m
+Sun Oct 16 11:22:46 2022  [0mls_param: {}[0m
+Sun Oct 16 11:22:46 2022  [0mmax_epoch: 100[0m
+Sun Oct 16 11:22:46 2022  [0mmix_up_num: 0[0m
+Sun Oct 16 11:22:46 2022  [0mmode: train_val[0m
+Sun Oct 16 11:22:46 2022  [0mmodel: dstanet[0m
+Sun Oct 16 11:22:46 2022  [0mmodel_param: {'num_point': 42, 'num_frame': 180, 'num_subset': 3, 'num_channel': 6, 'num_person': 1, 'glo_reg_s': False, 'att_s': True, 'glo_reg_t': False, 'att_t': False, 'dropout': 0, 'attentiondrop': 0, 'dropout2d': 0, 'use_spatial_att': True, 'use_temporal_att': False, 'use_pet': True, 'use_pes': True, 'diffusion': 5, 'config': [[64, 64, 16, 1], [64, 64, 16, 1], [64, 128, 32, 2], [128, 128, 32, 1]]}[0m
+Sun Oct 16 11:22:46 2022  [0mmodel_saved_name: ./work_dir/adni/[0m
+Sun Oct 16 11:22:46 2022  [0mnum_epoch_per_save: 200[0m
+Sun Oct 16 11:22:46 2022  [0mnum_subsets: 3[0m
+Sun Oct 16 11:22:46 2022  [0moptimizer: sgd_nev[0m
+Sun Oct 16 11:22:46 2022  [0mpin_memory: False[0m
+Sun Oct 16 11:22:46 2022  [0mpre_trained_model: None[0m
+Sun Oct 16 11:22:46 2022  [0mstep: [80][0m
+Sun Oct 16 11:22:46 2022  [0mtrain: classify[0m
+Sun Oct 16 11:22:46 2022  [0mval_first: False[0m
+Sun Oct 16 11:22:46 2022  [0mwarm_up_epoch: 5[0m
+Sun Oct 16 11:22:46 2022  [0mwd: 0.0005[0m
+Sun Oct 16 11:22:46 2022  [0mworker: 32[0m
+Sun Oct 16 11:22:46 2022  Operation finished
+
+Sun Oct 16 11:22:46 2022  work dir: ./work_dir/adni/
+Sun Oct 16 11:22:46 2022  Model load finished: dstanet mode: train
+Sun Oct 16 11:22:49 2022  copy model to gpu
+Sun Oct 16 11:22:49 2022  Using SGD with momentum 0.9and nesterov
+Sun Oct 16 11:22:49 2022  no pretrained optimizer is loaded
+Sun Oct 16 11:22:49 2022  Using loss: cross_entropy
+Sun Oct 16 11:22:50 2022  Data load finished: adni
+Sun Oct 16 11:22:50 2022  lr scheduler: Reduce by epoch, step: [60, 80]
+Sun Oct 16 11:22:50 2022  start epoch 0 -> max epoch 100
+Sun Oct 16 11:22:50 2022  Current lr: 0.02
+Sun Oct 16 11:22:53 2022  Training finished for epoch 0
+Sun Oct 16 11:22:56 2022  Validation finished for epoch 0
+Sun Oct 16 11:22:56 2022  EPOCH: 0, ACC: 0.466667, LOSS: 14.058505, EPOCH_TIME: 6.018416, LR: 0.02, BEST_ACC: 0.466667
+Sun Oct 16 11:22:56 2022  Current lr: 0.04
+Sun Oct 16 11:22:59 2022  Training finished for epoch 1
+Sun Oct 16 11:23:02 2022  Validation finished for epoch 1
+Sun Oct 16 11:23:02 2022  EPOCH: 1, ACC: 0.533333, LOSS: 8.221828, EPOCH_TIME: 6.068686, LR: 0.04, BEST_ACC: 0.533333
+Sun Oct 16 11:23:02 2022  Current lr: 0.06000000000000001
+Sun Oct 16 11:37:57 2022  [0mbatch_size: 10[0m
+Sun Oct 16 11:37:57 2022  [0mclass_num: 2[0m
+Sun Oct 16 11:37:57 2022  [35mconfig: ./config/config.yaml[0m
+Sun Oct 16 11:37:57 2022  [0mcuda_visible_device: 0[0m
+Sun Oct 16 11:37:57 2022  [0mdata: adni[0m
+Sun Oct 16 11:37:57 2022  [0mdata_param: {'train_data_param': {'data_path': '/data/datasets/SyntheticDataForKernelTransformer/train_data.npy', 'label_path': '/data/datasets/SyntheticDataForKernelTransformer/train_label.pkl', 'random_choose': True, 'center_choose': False, 'random_noise': True, 'random_scale': True, 'window_size': 200, 'final_size': 180, 'num_skip_frame': None, 'decouple_spatial': False}, 'val_data_param': {'data_path': '/data/datasets/SyntheticDataForKernelTransformer/test_data.npy', 'label_path': '/data/datasets/SyntheticDataForKernelTransformer/test_label.pkl', 'random_choose': True, 'center_choose': False, 'random_noise': False, 'random_scale': False, 'window_size': 200, 'final_size': 180, 'num_skip_frame': None, 'decouple_spatial': False, 'augtimes': 1}}[0m
+Sun Oct 16 11:37:57 2022  [0mdebug: False[0m
+Sun Oct 16 11:37:57 2022  [0mdevice_id: [0][0m
+Sun Oct 16 11:37:57 2022  [0mfreeze_keys: [][0m
+Sun Oct 16 11:37:57 2022  [0mgrad_clip: 0[0m
+Sun Oct 16 11:37:57 2022  [0mignore_weights: ['fc'][0m
+Sun Oct 16 11:37:57 2022  [0mlabel_smoothing_num: 0[0m
+Sun Oct 16 11:37:57 2022  [0mlast_model: None[0m
+Sun Oct 16 11:37:57 2022  [0mloss: cross_entropy[0m
+Sun Oct 16 11:37:57 2022  [0mlr: 0.1[0m
+Sun Oct 16 11:37:57 2022  [0mlr_decay_ratio: 0.1[0m
+Sun Oct 16 11:37:57 2022  [0mlr_multi_keys: [][0m
+Sun Oct 16 11:37:57 2022  [0mlr_param: {'step': [60, 80]}[0m
+Sun Oct 16 11:37:57 2022  [0mlr_scheduler: reduce_by_epoch[0m
+Sun Oct 16 11:37:57 2022  [0mls_param: {}[0m
+Sun Oct 16 11:37:57 2022  [0mmax_epoch: 100[0m
+Sun Oct 16 11:37:57 2022  [0mmix_up_num: 0[0m
+Sun Oct 16 11:37:57 2022  [0mmode: train_val[0m
+Sun Oct 16 11:37:57 2022  [0mmodel: dstanet[0m
+Sun Oct 16 11:37:57 2022  [0mmodel_param: {'num_point': 42, 'num_frame': 180, 'num_subset': 3, 'num_channel': 6, 'num_person': 1, 'glo_reg_s': False, 'att_s': True, 'glo_reg_t': False, 'att_t': False, 'dropout': 0, 'attentiondrop': 0, 'dropout2d': 0, 'use_spatial_att': True, 'use_temporal_att': False, 'use_pet': True, 'use_pes': True, 'kernelattention': True, 'diffusion': 0, 'config': [[64, 64, 16, 1], [64, 64, 16, 1], [64, 128, 32, 2], [128, 128, 32, 1]]}[0m
+Sun Oct 16 11:37:57 2022  [0mmodel_saved_name: ./work_dir/adni/[0m
+Sun Oct 16 11:37:57 2022  [0mnum_epoch_per_save: 200[0m
+Sun Oct 16 11:37:57 2022  [0mnum_subsets: 3[0m
+Sun Oct 16 11:37:57 2022  [0moptimizer: sgd_nev[0m
+Sun Oct 16 11:37:57 2022  [0mpin_memory: False[0m
+Sun Oct 16 11:37:57 2022  [0mpre_trained_model: None[0m
+Sun Oct 16 11:37:57 2022  [0mstep: [80][0m
+Sun Oct 16 11:37:57 2022  [0mtrain: classify[0m
+Sun Oct 16 11:37:57 2022  [0mval_first: False[0m
+Sun Oct 16 11:37:57 2022  [0mwarm_up_epoch: 5[0m
+Sun Oct 16 11:37:57 2022  [0mwd: 0.0005[0m
+Sun Oct 16 11:37:57 2022  [0mworker: 32[0m
+Sun Oct 16 11:37:57 2022  Operation finished
+
+Sun Oct 16 11:37:57 2022  work dir: ./work_dir/adni/
+Sun Oct 16 11:37:57 2022  Model load finished: dstanet mode: train
+Sun Oct 16 11:38:01 2022  copy model to gpu
+Sun Oct 16 11:38:01 2022  Using SGD with momentum 0.9and nesterov
+Sun Oct 16 11:38:01 2022  no pretrained optimizer is loaded
+Sun Oct 16 11:38:01 2022  Using loss: cross_entropy
+Sun Oct 16 11:38:01 2022  Data load finished: adni
+Sun Oct 16 11:38:01 2022  lr scheduler: Reduce by epoch, step: [60, 80]
+Sun Oct 16 11:38:01 2022  start epoch 0 -> max epoch 100
+Sun Oct 16 11:38:01 2022  Current lr: 0.02
+Sun Oct 16 11:38:04 2022  Training finished for epoch 0
+Sun Oct 16 11:38:06 2022  Validation finished for epoch 0
+Sun Oct 16 11:38:06 2022  EPOCH: 0, ACC: 0.466667, LOSS: 14.066526, EPOCH_TIME: 5.559974, LR: 0.02, BEST_ACC: 0.466667
+Sun Oct 16 11:38:06 2022  Current lr: 0.04
+Sun Oct 16 11:38:10 2022  Training finished for epoch 1
+Sun Oct 16 11:38:12 2022  Validation finished for epoch 1
+Sun Oct 16 11:38:12 2022  EPOCH: 1, ACC: 0.533333, LOSS: 8.258673, EPOCH_TIME: 5.700816, LR: 0.04, BEST_ACC: 0.533333
+Sun Oct 16 11:38:12 2022  Current lr: 0.06000000000000001
+Sun Oct 16 11:38:15 2022  Training finished for epoch 2
+Sun Oct 16 11:38:18 2022  Validation finished for epoch 2
+Sun Oct 16 11:38:18 2022  EPOCH: 2, ACC: 0.600000, LOSS: 26.843643, EPOCH_TIME: 5.710482, LR: 0.06000000000000001, BEST_ACC: 0.600000
+Sun Oct 16 11:38:18 2022  Current lr: 0.08
+Sun Oct 16 11:38:21 2022  Training finished for epoch 3
+Sun Oct 16 11:38:24 2022  Validation finished for epoch 3
+Sun Oct 16 11:38:24 2022  EPOCH: 3, ACC: 0.600000, LOSS: 54.603384, EPOCH_TIME: 5.712471, LR: 0.08, BEST_ACC: 0.600000
+Sun Oct 16 11:38:24 2022  Current lr: 0.1
+Sun Oct 16 11:38:27 2022  Training finished for epoch 4
+Sun Oct 16 11:38:29 2022  Validation finished for epoch 4
+Sun Oct 16 11:38:29 2022  EPOCH: 4, ACC: 0.600000, LOSS: 29.450291, EPOCH_TIME: 5.821193, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:38:29 2022  Current lr: 0.1
+Sun Oct 16 11:38:33 2022  Training finished for epoch 5
+Sun Oct 16 11:38:35 2022  Validation finished for epoch 5
+Sun Oct 16 11:38:35 2022  EPOCH: 5, ACC: 0.533333, LOSS: 13.515665, EPOCH_TIME: 5.698757, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:38:35 2022  Current lr: 0.1
+Sun Oct 16 11:38:38 2022  Training finished for epoch 6
+Sun Oct 16 11:38:41 2022  Validation finished for epoch 6
+Sun Oct 16 11:38:41 2022  EPOCH: 6, ACC: 0.533333, LOSS: 3.228730, EPOCH_TIME: 5.978628, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:38:41 2022  Current lr: 0.1
+Sun Oct 16 11:38:44 2022  Training finished for epoch 7
+Sun Oct 16 11:38:47 2022  Validation finished for epoch 7
+Sun Oct 16 11:38:47 2022  EPOCH: 7, ACC: 0.600000, LOSS: 1.788429, EPOCH_TIME: 5.700102, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:38:47 2022  Current lr: 0.1
+Sun Oct 16 11:38:50 2022  Training finished for epoch 8
+Sun Oct 16 11:38:52 2022  Validation finished for epoch 8
+Sun Oct 16 11:38:52 2022  EPOCH: 8, ACC: 0.400000, LOSS: 1.969855, EPOCH_TIME: 5.683846, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:38:53 2022  Current lr: 0.1
+Sun Oct 16 11:38:55 2022  Training finished for epoch 9
+Sun Oct 16 11:38:58 2022  Validation finished for epoch 9
+Sun Oct 16 11:38:58 2022  EPOCH: 9, ACC: 0.266667, LOSS: 1.064672, EPOCH_TIME: 5.677459, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:38:58 2022  Current lr: 0.1
+Sun Oct 16 11:39:01 2022  Training finished for epoch 10
+Sun Oct 16 11:39:04 2022  Validation finished for epoch 10
+Sun Oct 16 11:39:04 2022  EPOCH: 10, ACC: 0.533333, LOSS: 1.025986, EPOCH_TIME: 5.759132, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:39:04 2022  Current lr: 0.1
+Sun Oct 16 11:39:07 2022  Training finished for epoch 11
+Sun Oct 16 11:39:10 2022  Validation finished for epoch 11
+Sun Oct 16 11:39:10 2022  EPOCH: 11, ACC: 0.600000, LOSS: 0.710156, EPOCH_TIME: 5.687452, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:39:10 2022  Current lr: 0.1
+Sun Oct 16 11:39:13 2022  Training finished for epoch 12
+Sun Oct 16 11:39:15 2022  Validation finished for epoch 12
+Sun Oct 16 11:39:15 2022  EPOCH: 12, ACC: 0.533333, LOSS: 1.288506, EPOCH_TIME: 5.770476, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:39:15 2022  Current lr: 0.1
+Sun Oct 16 11:39:18 2022  Training finished for epoch 13
+Sun Oct 16 11:39:21 2022  Validation finished for epoch 13
+Sun Oct 16 11:39:21 2022  EPOCH: 13, ACC: 0.266667, LOSS: 0.945689, EPOCH_TIME: 5.870749, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:39:21 2022  Current lr: 0.1
+Sun Oct 16 11:39:54 2022  [0mbatch_size: 10[0m
+Sun Oct 16 11:39:54 2022  [0mclass_num: 2[0m
+Sun Oct 16 11:39:54 2022  [35mconfig: ./config/config.yaml[0m
+Sun Oct 16 11:39:54 2022  [0mcuda_visible_device: 0[0m
+Sun Oct 16 11:39:54 2022  [0mdata: adni[0m
+Sun Oct 16 11:39:54 2022  [0mdata_param: {'train_data_param': {'data_path': '/data/datasets/SyntheticDataForKernelTransformer/train_data.npy', 'label_path': '/data/datasets/SyntheticDataForKernelTransformer/train_label.pkl', 'random_choose': True, 'center_choose': False, 'random_noise': True, 'random_scale': True, 'window_size': 200, 'final_size': 180, 'num_skip_frame': None, 'decouple_spatial': False}, 'val_data_param': {'data_path': '/data/datasets/SyntheticDataForKernelTransformer/test_data.npy', 'label_path': '/data/datasets/SyntheticDataForKernelTransformer/test_label.pkl', 'random_choose': True, 'center_choose': False, 'random_noise': False, 'random_scale': False, 'window_size': 200, 'final_size': 180, 'num_skip_frame': None, 'decouple_spatial': False, 'augtimes': 1}}[0m
+Sun Oct 16 11:39:54 2022  [0mdebug: False[0m
+Sun Oct 16 11:39:54 2022  [0mdevice_id: [0][0m
+Sun Oct 16 11:39:54 2022  [0mfreeze_keys: [][0m
+Sun Oct 16 11:39:54 2022  [0mgrad_clip: 0[0m
+Sun Oct 16 11:39:54 2022  [0mignore_weights: ['fc'][0m
+Sun Oct 16 11:39:54 2022  [0mlabel_smoothing_num: 0[0m
+Sun Oct 16 11:39:54 2022  [0mlast_model: None[0m
+Sun Oct 16 11:39:54 2022  [0mloss: cross_entropy[0m
+Sun Oct 16 11:39:54 2022  [0mlr: 0.1[0m
+Sun Oct 16 11:39:54 2022  [0mlr_decay_ratio: 0.1[0m
+Sun Oct 16 11:39:54 2022  [0mlr_multi_keys: [][0m
+Sun Oct 16 11:39:54 2022  [0mlr_param: {'step': [60, 80]}[0m
+Sun Oct 16 11:39:54 2022  [0mlr_scheduler: reduce_by_epoch[0m
+Sun Oct 16 11:39:54 2022  [0mls_param: {}[0m
+Sun Oct 16 11:39:54 2022  [0mmax_epoch: 100[0m
+Sun Oct 16 11:39:54 2022  [0mmix_up_num: 0[0m
+Sun Oct 16 11:39:54 2022  [0mmode: train_val[0m
+Sun Oct 16 11:39:54 2022  [0mmodel: dstanet[0m
+Sun Oct 16 11:39:54 2022  [0mmodel_param: {'num_point': 42, 'num_frame': 180, 'num_subset': 3, 'num_channel': 6, 'num_person': 1, 'glo_reg_s': False, 'att_s': True, 'glo_reg_t': False, 'att_t': False, 'dropout': 0, 'attentiondrop': 0, 'dropout2d': 0, 'use_spatial_att': True, 'use_temporal_att': False, 'use_pet': True, 'use_pes': True, 'kernelattention': True, 'diffusion': 5, 'config': [[64, 64, 16, 1], [64, 64, 16, 1], [64, 128, 32, 2], [128, 128, 32, 1]]}[0m
+Sun Oct 16 11:39:54 2022  [0mmodel_saved_name: ./work_dir/adni/[0m
+Sun Oct 16 11:39:54 2022  [0mnum_epoch_per_save: 200[0m
+Sun Oct 16 11:39:54 2022  [0mnum_subsets: 3[0m
+Sun Oct 16 11:39:54 2022  [0moptimizer: sgd_nev[0m
+Sun Oct 16 11:39:54 2022  [0mpin_memory: False[0m
+Sun Oct 16 11:39:54 2022  [0mpre_trained_model: None[0m
+Sun Oct 16 11:39:54 2022  [0mstep: [80][0m
+Sun Oct 16 11:39:54 2022  [0mtrain: classify[0m
+Sun Oct 16 11:39:54 2022  [0mval_first: False[0m
+Sun Oct 16 11:39:54 2022  [0mwarm_up_epoch: 5[0m
+Sun Oct 16 11:39:54 2022  [0mwd: 0.0005[0m
+Sun Oct 16 11:39:54 2022  [0mworker: 32[0m
+Sun Oct 16 11:39:54 2022  Operation finished
+
+Sun Oct 16 11:39:54 2022  work dir: ./work_dir/adni/
+Sun Oct 16 11:39:54 2022  Model load finished: dstanet mode: train
+Sun Oct 16 11:39:58 2022  copy model to gpu
+Sun Oct 16 11:39:58 2022  Using SGD with momentum 0.9and nesterov
+Sun Oct 16 11:39:58 2022  no pretrained optimizer is loaded
+Sun Oct 16 11:39:58 2022  Using loss: cross_entropy
+Sun Oct 16 11:39:58 2022  Data load finished: adni
+Sun Oct 16 11:39:58 2022  lr scheduler: Reduce by epoch, step: [60, 80]
+Sun Oct 16 11:39:58 2022  start epoch 0 -> max epoch 100
+Sun Oct 16 11:39:58 2022  Current lr: 0.02
+Sun Oct 16 11:40:01 2022  Training finished for epoch 0
+Sun Oct 16 11:40:04 2022  Validation finished for epoch 0
+Sun Oct 16 11:40:04 2022  EPOCH: 0, ACC: 0.466667, LOSS: 14.058505, EPOCH_TIME: 5.651953, LR: 0.02, BEST_ACC: 0.466667
+Sun Oct 16 11:40:04 2022  Current lr: 0.04
+Sun Oct 16 11:40:07 2022  Training finished for epoch 1
+Sun Oct 16 11:40:09 2022  Validation finished for epoch 1
+Sun Oct 16 11:40:09 2022  EPOCH: 1, ACC: 0.533333, LOSS: 8.221828, EPOCH_TIME: 5.602669, LR: 0.04, BEST_ACC: 0.533333
+Sun Oct 16 11:40:09 2022  Current lr: 0.06000000000000001
+Sun Oct 16 11:40:12 2022  Training finished for epoch 2
+Sun Oct 16 11:40:15 2022  Validation finished for epoch 2
+Sun Oct 16 11:40:15 2022  EPOCH: 2, ACC: 0.600000, LOSS: 26.949509, EPOCH_TIME: 5.832590, LR: 0.06000000000000001, BEST_ACC: 0.600000
+Sun Oct 16 11:40:15 2022  Current lr: 0.08
+Sun Oct 16 11:40:18 2022  Training finished for epoch 3
+Sun Oct 16 11:40:21 2022  Validation finished for epoch 3
+Sun Oct 16 11:40:21 2022  EPOCH: 3, ACC: 0.600000, LOSS: 54.126174, EPOCH_TIME: 5.679699, LR: 0.08, BEST_ACC: 0.600000
+Sun Oct 16 11:40:21 2022  Current lr: 0.1
+Sun Oct 16 11:40:24 2022  Training finished for epoch 4
+Sun Oct 16 11:40:27 2022  Validation finished for epoch 4
+Sun Oct 16 11:40:27 2022  EPOCH: 4, ACC: 0.600000, LOSS: 29.583145, EPOCH_TIME: 5.832268, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:40:27 2022  Current lr: 0.1
+Sun Oct 16 11:40:30 2022  Training finished for epoch 5
+Sun Oct 16 11:40:33 2022  Validation finished for epoch 5
+Sun Oct 16 11:40:33 2022  EPOCH: 5, ACC: 0.533333, LOSS: 13.788136, EPOCH_TIME: 6.014947, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:40:33 2022  Current lr: 0.1
+Sun Oct 16 11:40:36 2022  Training finished for epoch 6
+Sun Oct 16 11:40:39 2022  Validation finished for epoch 6
+Sun Oct 16 11:40:39 2022  EPOCH: 6, ACC: 0.533333, LOSS: 3.519306, EPOCH_TIME: 6.297787, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:40:39 2022  Current lr: 0.1
+Sun Oct 16 11:40:42 2022  Training finished for epoch 7
+Sun Oct 16 11:40:45 2022  Validation finished for epoch 7
+Sun Oct 16 11:40:45 2022  EPOCH: 7, ACC: 0.600000, LOSS: 1.917907, EPOCH_TIME: 6.081710, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:40:45 2022  Current lr: 0.1
+Sun Oct 16 11:40:49 2022  Training finished for epoch 8
+Sun Oct 16 11:40:52 2022  Validation finished for epoch 8
+Sun Oct 16 11:40:52 2022  EPOCH: 8, ACC: 0.400000, LOSS: 1.969823, EPOCH_TIME: 6.290100, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:40:52 2022  Current lr: 0.1
+Sun Oct 16 11:40:55 2022  Training finished for epoch 9
+Sun Oct 16 11:40:58 2022  Validation finished for epoch 9
+Sun Oct 16 11:40:58 2022  EPOCH: 9, ACC: 0.266667, LOSS: 1.069946, EPOCH_TIME: 6.265404, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:40:58 2022  Current lr: 0.1
+Sun Oct 16 11:41:01 2022  Training finished for epoch 10
+Sun Oct 16 11:41:04 2022  Validation finished for epoch 10
+Sun Oct 16 11:41:04 2022  EPOCH: 10, ACC: 0.533333, LOSS: 1.037248, EPOCH_TIME: 6.326483, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:41:04 2022  Current lr: 0.1
+Sun Oct 16 11:41:07 2022  Training finished for epoch 11
+Sun Oct 16 11:41:10 2022  Validation finished for epoch 11
+Sun Oct 16 11:41:10 2022  EPOCH: 11, ACC: 0.600000, LOSS: 0.712176, EPOCH_TIME: 6.278003, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:41:10 2022  Current lr: 0.1
+Sun Oct 16 11:41:14 2022  Training finished for epoch 12
+Sun Oct 16 11:41:17 2022  Validation finished for epoch 12
+Sun Oct 16 11:41:17 2022  EPOCH: 12, ACC: 0.533333, LOSS: 1.334601, EPOCH_TIME: 6.293994, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:41:17 2022  Current lr: 0.1
+Sun Oct 16 11:41:20 2022  Training finished for epoch 13
+Sun Oct 16 11:41:23 2022  Validation finished for epoch 13
+Sun Oct 16 11:41:23 2022  EPOCH: 13, ACC: 0.266667, LOSS: 0.976045, EPOCH_TIME: 5.974006, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:41:23 2022  Current lr: 0.1
+Sun Oct 16 11:41:26 2022  Training finished for epoch 14
+Sun Oct 16 11:41:29 2022  Validation finished for epoch 14
+Sun Oct 16 11:41:29 2022  EPOCH: 14, ACC: 0.266667, LOSS: 1.242267, EPOCH_TIME: 6.396326, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:41:29 2022  Current lr: 0.1
+Sun Oct 16 11:41:32 2022  Training finished for epoch 15
+Sun Oct 16 11:41:35 2022  Validation finished for epoch 15
+Sun Oct 16 11:41:35 2022  EPOCH: 15, ACC: 0.333333, LOSS: 0.917375, EPOCH_TIME: 6.173072, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:41:35 2022  Current lr: 0.1
+Sun Oct 16 11:41:38 2022  Training finished for epoch 16
+Sun Oct 16 11:41:41 2022  Validation finished for epoch 16
+Sun Oct 16 11:41:41 2022  EPOCH: 16, ACC: 0.533333, LOSS: 1.311754, EPOCH_TIME: 6.250845, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:41:41 2022  Current lr: 0.1
+Sun Oct 16 11:41:45 2022  Training finished for epoch 17
+Sun Oct 16 11:41:48 2022  Validation finished for epoch 17
+Sun Oct 16 11:41:48 2022  EPOCH: 17, ACC: 0.333333, LOSS: 0.872572, EPOCH_TIME: 6.231824, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:41:48 2022  Current lr: 0.1
+Sun Oct 16 11:41:51 2022  Training finished for epoch 18
+Sun Oct 16 11:41:54 2022  Validation finished for epoch 18
+Sun Oct 16 11:41:54 2022  EPOCH: 18, ACC: 0.333333, LOSS: 1.084403, EPOCH_TIME: 6.099057, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:41:54 2022  Current lr: 0.1
+Sun Oct 16 11:41:57 2022  Training finished for epoch 19
+Sun Oct 16 11:42:00 2022  Validation finished for epoch 19
+Sun Oct 16 11:42:00 2022  EPOCH: 19, ACC: 0.333333, LOSS: 0.840573, EPOCH_TIME: 6.098304, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:42:00 2022  Current lr: 0.1
+Sun Oct 16 11:42:03 2022  Training finished for epoch 20
+Sun Oct 16 11:42:06 2022  Validation finished for epoch 20
+Sun Oct 16 11:42:06 2022  EPOCH: 20, ACC: 0.400000, LOSS: 0.909913, EPOCH_TIME: 6.120448, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:42:06 2022  Current lr: 0.1
+Sun Oct 16 11:42:09 2022  Training finished for epoch 21
+Sun Oct 16 11:42:12 2022  Validation finished for epoch 21
+Sun Oct 16 11:42:12 2022  EPOCH: 21, ACC: 0.333333, LOSS: 1.331381, EPOCH_TIME: 6.314195, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:42:12 2022  Current lr: 0.1
+Sun Oct 16 11:42:16 2022  Training finished for epoch 22
+Sun Oct 16 11:42:19 2022  Validation finished for epoch 22
+Sun Oct 16 11:42:19 2022  EPOCH: 22, ACC: 0.333333, LOSS: 0.945825, EPOCH_TIME: 6.189691, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:42:19 2022  Current lr: 0.1
+Sun Oct 16 11:42:22 2022  Training finished for epoch 23
+Sun Oct 16 11:42:25 2022  Validation finished for epoch 23
+Sun Oct 16 11:42:25 2022  EPOCH: 23, ACC: 0.400000, LOSS: 1.251387, EPOCH_TIME: 6.164139, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:42:25 2022  Current lr: 0.1
+Sun Oct 16 11:42:28 2022  Training finished for epoch 24
+Sun Oct 16 11:42:31 2022  Validation finished for epoch 24
+Sun Oct 16 11:42:31 2022  EPOCH: 24, ACC: 0.400000, LOSS: 1.141558, EPOCH_TIME: 5.973869, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:42:31 2022  Current lr: 0.1
+Sun Oct 16 11:42:34 2022  Training finished for epoch 25
+Sun Oct 16 11:42:37 2022  Validation finished for epoch 25
+Sun Oct 16 11:42:37 2022  EPOCH: 25, ACC: 0.466667, LOSS: 0.766209, EPOCH_TIME: 6.071121, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:42:37 2022  Current lr: 0.1
+Sun Oct 16 11:42:40 2022  Training finished for epoch 26
+Sun Oct 16 11:42:43 2022  Validation finished for epoch 26
+Sun Oct 16 11:42:43 2022  EPOCH: 26, ACC: 0.400000, LOSS: 0.645595, EPOCH_TIME: 6.359520, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:42:43 2022  Current lr: 0.1
+Sun Oct 16 11:42:46 2022  Training finished for epoch 27
+Sun Oct 16 11:42:49 2022  Validation finished for epoch 27
+Sun Oct 16 11:42:49 2022  EPOCH: 27, ACC: 0.600000, LOSS: 0.842209, EPOCH_TIME: 6.274709, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:42:49 2022  Current lr: 0.1
+Sun Oct 16 11:42:53 2022  Training finished for epoch 28
+Sun Oct 16 11:42:55 2022  Validation finished for epoch 28
+Sun Oct 16 11:42:55 2022  EPOCH: 28, ACC: 0.533333, LOSS: 6.450073, EPOCH_TIME: 6.090318, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:42:55 2022  Current lr: 0.1
+Sun Oct 16 11:42:59 2022  Training finished for epoch 29
+Sun Oct 16 11:43:02 2022  Validation finished for epoch 29
+Sun Oct 16 11:43:02 2022  EPOCH: 29, ACC: 0.400000, LOSS: 1.319259, EPOCH_TIME: 6.181541, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:43:02 2022  Current lr: 0.1
+Sun Oct 16 11:43:05 2022  Training finished for epoch 30
+Sun Oct 16 11:43:08 2022  Validation finished for epoch 30
+Sun Oct 16 11:43:08 2022  EPOCH: 30, ACC: 0.600000, LOSS: 0.653046, EPOCH_TIME: 5.978029, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:43:08 2022  Current lr: 0.1
+Sun Oct 16 11:43:11 2022  Training finished for epoch 31
+Sun Oct 16 11:43:14 2022  Validation finished for epoch 31
+Sun Oct 16 11:43:14 2022  EPOCH: 31, ACC: 0.533333, LOSS: 0.564919, EPOCH_TIME: 6.024595, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:43:14 2022  Current lr: 0.1
+Sun Oct 16 11:43:17 2022  Training finished for epoch 32
+Sun Oct 16 11:43:20 2022  Validation finished for epoch 32
+Sun Oct 16 11:43:20 2022  EPOCH: 32, ACC: 0.600000, LOSS: 1.286060, EPOCH_TIME: 5.951148, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:43:20 2022  Current lr: 0.1
+Sun Oct 16 11:43:23 2022  Training finished for epoch 33
+Sun Oct 16 11:43:25 2022  Validation finished for epoch 33
+Sun Oct 16 11:43:25 2022  EPOCH: 33, ACC: 0.600000, LOSS: 0.983720, EPOCH_TIME: 5.883869, LR: 0.1, BEST_ACC: 0.600000
+Sun Oct 16 11:43:25 2022  Current lr: 0.1
+Sun Oct 16 11:43:29 2022  Training finished for epoch 34
+Sun Oct 16 11:43:31 2022  Validation finished for epoch 34
+Sun Oct 16 11:43:31 2022  EPOCH: 34, ACC: 0.666667, LOSS: 1.027808, EPOCH_TIME: 5.887844, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:43:31 2022  Current lr: 0.1
+Sun Oct 16 11:43:35 2022  Training finished for epoch 35
+Sun Oct 16 11:43:37 2022  Validation finished for epoch 35
+Sun Oct 16 11:43:37 2022  EPOCH: 35, ACC: 0.600000, LOSS: 4.380671, EPOCH_TIME: 6.018445, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:43:37 2022  Current lr: 0.1
+Sun Oct 16 11:43:41 2022  Training finished for epoch 36
+Sun Oct 16 11:43:43 2022  Validation finished for epoch 36
+Sun Oct 16 11:43:43 2022  EPOCH: 36, ACC: 0.600000, LOSS: 4.592763, EPOCH_TIME: 6.050409, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:43:43 2022  Current lr: 0.1
+Sun Oct 16 11:43:47 2022  Training finished for epoch 37
+Sun Oct 16 11:43:50 2022  Validation finished for epoch 37
+Sun Oct 16 11:43:50 2022  EPOCH: 37, ACC: 0.400000, LOSS: 3.369606, EPOCH_TIME: 6.136240, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:43:50 2022  Current lr: 0.1
+Sun Oct 16 11:43:53 2022  Training finished for epoch 38
+Sun Oct 16 11:43:55 2022  Validation finished for epoch 38
+Sun Oct 16 11:43:55 2022  EPOCH: 38, ACC: 0.466667, LOSS: 1.438383, EPOCH_TIME: 5.845062, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:43:55 2022  Current lr: 0.1
+Sun Oct 16 11:43:59 2022  Training finished for epoch 39
+Sun Oct 16 11:44:01 2022  Validation finished for epoch 39
+Sun Oct 16 11:44:01 2022  EPOCH: 39, ACC: 0.600000, LOSS: 1.136070, EPOCH_TIME: 6.000162, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:44:01 2022  Current lr: 0.1
+Sun Oct 16 11:44:05 2022  Training finished for epoch 40
+Sun Oct 16 11:44:07 2022  Validation finished for epoch 40
+Sun Oct 16 11:44:07 2022  EPOCH: 40, ACC: 0.533333, LOSS: 4.134819, EPOCH_TIME: 5.949534, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:44:07 2022  Current lr: 0.1
+Sun Oct 16 11:44:11 2022  Training finished for epoch 41
+Sun Oct 16 11:44:13 2022  Validation finished for epoch 41
+Sun Oct 16 11:44:13 2022  EPOCH: 41, ACC: 0.466667, LOSS: 3.267188, EPOCH_TIME: 5.994714, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:44:13 2022  Current lr: 0.1
+Sun Oct 16 11:44:17 2022  Training finished for epoch 42
+Sun Oct 16 11:44:19 2022  Validation finished for epoch 42
+Sun Oct 16 11:44:19 2022  EPOCH: 42, ACC: 0.333333, LOSS: 2.131882, EPOCH_TIME: 6.027239, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:44:19 2022  Current lr: 0.1
+Sun Oct 16 11:44:23 2022  Training finished for epoch 43
+Sun Oct 16 11:44:25 2022  Validation finished for epoch 43
+Sun Oct 16 11:44:25 2022  EPOCH: 43, ACC: 0.533333, LOSS: 3.277450, EPOCH_TIME: 5.921894, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:44:25 2022  Current lr: 0.1
+Sun Oct 16 11:44:29 2022  Training finished for epoch 44
+Sun Oct 16 11:44:31 2022  Validation finished for epoch 44
+Sun Oct 16 11:44:31 2022  EPOCH: 44, ACC: 0.466667, LOSS: 1.669376, EPOCH_TIME: 6.067708, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:44:31 2022  Current lr: 0.1
+Sun Oct 16 11:44:35 2022  Training finished for epoch 45
+Sun Oct 16 11:44:37 2022  Validation finished for epoch 45
+Sun Oct 16 11:44:37 2022  EPOCH: 45, ACC: 0.533333, LOSS: 1.051503, EPOCH_TIME: 6.029556, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:44:37 2022  Current lr: 0.1
+Sun Oct 16 11:44:41 2022  Training finished for epoch 46
+Sun Oct 16 11:44:43 2022  Validation finished for epoch 46
+Sun Oct 16 11:44:43 2022  EPOCH: 46, ACC: 0.666667, LOSS: 1.509054, EPOCH_TIME: 6.076562, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:44:43 2022  Current lr: 0.1
+Sun Oct 16 11:44:47 2022  Training finished for epoch 47
+Sun Oct 16 11:44:50 2022  Validation finished for epoch 47
+Sun Oct 16 11:44:50 2022  EPOCH: 47, ACC: 0.733333, LOSS: 0.910336, EPOCH_TIME: 6.151337, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:44:50 2022  Current lr: 0.1
+Sun Oct 16 11:44:53 2022  Training finished for epoch 48
+Sun Oct 16 11:44:56 2022  Validation finished for epoch 48
+Sun Oct 16 11:44:56 2022  EPOCH: 48, ACC: 0.600000, LOSS: 1.758626, EPOCH_TIME: 6.066228, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:44:56 2022  Current lr: 0.1
+Sun Oct 16 11:44:59 2022  Training finished for epoch 49
+Sun Oct 16 11:45:02 2022  Validation finished for epoch 49
+Sun Oct 16 11:45:02 2022  EPOCH: 49, ACC: 0.533333, LOSS: 3.056786, EPOCH_TIME: 6.237021, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:45:02 2022  Current lr: 0.1
+Sun Oct 16 11:45:05 2022  Training finished for epoch 50
+Sun Oct 16 11:45:08 2022  Validation finished for epoch 50
+Sun Oct 16 11:45:08 2022  EPOCH: 50, ACC: 0.533333, LOSS: 4.288535, EPOCH_TIME: 6.077234, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:45:08 2022  Current lr: 0.1
+Sun Oct 16 11:45:11 2022  Training finished for epoch 51
+Sun Oct 16 11:45:14 2022  Validation finished for epoch 51
+Sun Oct 16 11:45:14 2022  EPOCH: 51, ACC: 0.600000, LOSS: 4.880923, EPOCH_TIME: 6.242781, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:45:14 2022  Current lr: 0.1
+Sun Oct 16 11:45:17 2022  Training finished for epoch 52
+Sun Oct 16 11:45:20 2022  Validation finished for epoch 52
+Sun Oct 16 11:45:20 2022  EPOCH: 52, ACC: 0.533333, LOSS: 0.872231, EPOCH_TIME: 6.087031, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:45:20 2022  Current lr: 0.1
+Sun Oct 16 11:45:24 2022  Training finished for epoch 53
+Sun Oct 16 11:45:27 2022  Validation finished for epoch 53
+Sun Oct 16 11:45:27 2022  EPOCH: 53, ACC: 0.733333, LOSS: 0.811588, EPOCH_TIME: 6.291005, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:45:27 2022  Current lr: 0.1
+Sun Oct 16 11:45:30 2022  Training finished for epoch 54
+Sun Oct 16 11:45:33 2022  Validation finished for epoch 54
+Sun Oct 16 11:45:33 2022  EPOCH: 54, ACC: 0.533333, LOSS: 4.992112, EPOCH_TIME: 6.141134, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:45:33 2022  Current lr: 0.1
+Sun Oct 16 11:45:36 2022  Training finished for epoch 55
+Sun Oct 16 11:45:39 2022  Validation finished for epoch 55
+Sun Oct 16 11:45:39 2022  EPOCH: 55, ACC: 0.533333, LOSS: 3.326304, EPOCH_TIME: 6.164289, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:45:39 2022  Current lr: 0.1
+Sun Oct 16 11:45:42 2022  Training finished for epoch 56
+Sun Oct 16 11:45:45 2022  Validation finished for epoch 56
+Sun Oct 16 11:45:45 2022  EPOCH: 56, ACC: 0.400000, LOSS: 7.402574, EPOCH_TIME: 5.854182, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:45:45 2022  Current lr: 0.1
+Sun Oct 16 11:45:48 2022  Training finished for epoch 57
+Sun Oct 16 11:45:51 2022  Validation finished for epoch 57
+Sun Oct 16 11:45:51 2022  EPOCH: 57, ACC: 0.466667, LOSS: 6.205562, EPOCH_TIME: 5.850515, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:45:51 2022  Current lr: 0.1
+Sun Oct 16 11:45:54 2022  Training finished for epoch 58
+Sun Oct 16 11:45:57 2022  Validation finished for epoch 58
+Sun Oct 16 11:45:57 2022  EPOCH: 58, ACC: 0.666667, LOSS: 1.833015, EPOCH_TIME: 6.094397, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:45:57 2022  Current lr: 0.1
+Sun Oct 16 11:46:00 2022  Training finished for epoch 59
+Sun Oct 16 11:46:03 2022  Validation finished for epoch 59
+Sun Oct 16 11:46:03 2022  EPOCH: 59, ACC: 0.533333, LOSS: 1.234789, EPOCH_TIME: 5.975447, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:46:03 2022  Current lr: 0.010000000000000002
+Sun Oct 16 11:46:06 2022  Training finished for epoch 60
+Sun Oct 16 11:46:09 2022  Validation finished for epoch 60
+Sun Oct 16 11:46:09 2022  EPOCH: 60, ACC: 0.533333, LOSS: 1.353758, EPOCH_TIME: 5.965187, LR: 0.010000000000000002, BEST_ACC: 0.733333
+Sun Oct 16 11:46:09 2022  Current lr: 0.010000000000000002
+Sun Oct 16 11:46:12 2022  Training finished for epoch 61
+Sun Oct 16 11:49:20 2022  [0mbatch_size: 10[0m
+Sun Oct 16 11:49:20 2022  [0mclass_num: 2[0m
+Sun Oct 16 11:49:20 2022  [35mconfig: ./config/config.yaml[0m
+Sun Oct 16 11:49:20 2022  [0mcuda_visible_device: 0[0m
+Sun Oct 16 11:49:20 2022  [0mdata: adni[0m
+Sun Oct 16 11:49:20 2022  [0mdata_param: {'train_data_param': {'data_path': '/data/datasets/SyntheticDataForKernelTransformer/train_data2.npy', 'label_path': '/data/datasets/SyntheticDataForKernelTransformer/train_label2.pkl', 'random_choose': True, 'center_choose': False, 'random_noise': True, 'random_scale': True, 'window_size': 200, 'final_size': 180, 'num_skip_frame': None, 'decouple_spatial': False}, 'val_data_param': {'data_path': '/data/datasets/SyntheticDataForKernelTransformer/test_data2.npy', 'label_path': '/data/datasets/SyntheticDataForKernelTransformer/test_label2.pkl', 'random_choose': True, 'center_choose': False, 'random_noise': False, 'random_scale': False, 'window_size': 200, 'final_size': 180, 'num_skip_frame': None, 'decouple_spatial': False, 'augtimes': 1}}[0m
+Sun Oct 16 11:49:20 2022  [0mdebug: False[0m
+Sun Oct 16 11:49:20 2022  [0mdevice_id: [0][0m
+Sun Oct 16 11:49:20 2022  [0mfreeze_keys: [][0m
+Sun Oct 16 11:49:20 2022  [0mgrad_clip: 0[0m
+Sun Oct 16 11:49:20 2022  [0mignore_weights: ['fc'][0m
+Sun Oct 16 11:49:20 2022  [0mlabel_smoothing_num: 0[0m
+Sun Oct 16 11:49:20 2022  [0mlast_model: None[0m
+Sun Oct 16 11:49:20 2022  [0mloss: cross_entropy[0m
+Sun Oct 16 11:49:20 2022  [0mlr: 0.1[0m
+Sun Oct 16 11:49:20 2022  [0mlr_decay_ratio: 0.1[0m
+Sun Oct 16 11:49:20 2022  [0mlr_multi_keys: [][0m
+Sun Oct 16 11:49:20 2022  [0mlr_param: {'step': [60, 80]}[0m
+Sun Oct 16 11:49:20 2022  [0mlr_scheduler: reduce_by_epoch[0m
+Sun Oct 16 11:49:20 2022  [0mls_param: {}[0m
+Sun Oct 16 11:49:20 2022  [0mmax_epoch: 100[0m
+Sun Oct 16 11:49:20 2022  [0mmix_up_num: 0[0m
+Sun Oct 16 11:49:20 2022  [0mmode: train_val[0m
+Sun Oct 16 11:49:20 2022  [0mmodel: dstanet[0m
+Sun Oct 16 11:49:20 2022  [0mmodel_param: {'num_point': 42, 'num_frame': 180, 'num_subset': 3, 'num_channel': 6, 'num_person': 1, 'glo_reg_s': False, 'att_s': True, 'glo_reg_t': False, 'att_t': False, 'dropout': 0, 'attentiondrop': 0, 'dropout2d': 0, 'use_spatial_att': True, 'use_temporal_att': False, 'use_pet': True, 'use_pes': True, 'kernelattention': True, 'diffusion': 5, 'config': [[64, 64, 16, 1], [64, 64, 16, 1], [64, 128, 32, 2], [128, 128, 32, 1]]}[0m
+Sun Oct 16 11:49:20 2022  [0mmodel_saved_name: ./work_dir/adni/[0m
+Sun Oct 16 11:49:20 2022  [0mnum_epoch_per_save: 200[0m
+Sun Oct 16 11:49:20 2022  [0mnum_subsets: 3[0m
+Sun Oct 16 11:49:20 2022  [0moptimizer: sgd_nev[0m
+Sun Oct 16 11:49:20 2022  [0mpin_memory: False[0m
+Sun Oct 16 11:49:20 2022  [0mpre_trained_model: None[0m
+Sun Oct 16 11:49:20 2022  [0mstep: [80][0m
+Sun Oct 16 11:49:20 2022  [0mtrain: classify[0m
+Sun Oct 16 11:49:20 2022  [0mval_first: False[0m
+Sun Oct 16 11:49:20 2022  [0mwarm_up_epoch: 5[0m
+Sun Oct 16 11:49:20 2022  [0mwd: 0.0005[0m
+Sun Oct 16 11:49:20 2022  [0mworker: 32[0m
+Sun Oct 16 11:49:20 2022  Operation finished
+
+Sun Oct 16 11:49:20 2022  work dir: ./work_dir/adni/
+Sun Oct 16 11:49:20 2022  Model load finished: dstanet mode: train
+Sun Oct 16 11:49:24 2022  copy model to gpu
+Sun Oct 16 11:49:24 2022  Using SGD with momentum 0.9and nesterov
+Sun Oct 16 11:49:24 2022  no pretrained optimizer is loaded
+Sun Oct 16 11:49:24 2022  Using loss: cross_entropy
+Sun Oct 16 11:49:24 2022  Data load finished: adni
+Sun Oct 16 11:49:24 2022  lr scheduler: Reduce by epoch, step: [60, 80]
+Sun Oct 16 11:49:24 2022  start epoch 0 -> max epoch 100
+Sun Oct 16 11:49:24 2022  Current lr: 0.02
+Sun Oct 16 11:49:27 2022  Training finished for epoch 0
+Sun Oct 16 11:49:30 2022  Validation finished for epoch 0
+Sun Oct 16 11:49:30 2022  EPOCH: 0, ACC: 0.466667, LOSS: 11.491164, EPOCH_TIME: 6.006621, LR: 0.02, BEST_ACC: 0.466667
+Sun Oct 16 11:49:30 2022  Current lr: 0.04
+Sun Oct 16 11:49:33 2022  Training finished for epoch 1
+Sun Oct 16 11:49:36 2022  Validation finished for epoch 1
+Sun Oct 16 11:49:36 2022  EPOCH: 1, ACC: 0.600000, LOSS: 0.682530, EPOCH_TIME: 6.237561, LR: 0.04, BEST_ACC: 0.600000
+Sun Oct 16 11:49:36 2022  Current lr: 0.06000000000000001
+Sun Oct 16 11:49:40 2022  Training finished for epoch 2
+Sun Oct 16 11:49:43 2022  Validation finished for epoch 2
+Sun Oct 16 11:49:43 2022  EPOCH: 2, ACC: 0.666667, LOSS: 1.179510, EPOCH_TIME: 6.486745, LR: 0.06000000000000001, BEST_ACC: 0.666667
+Sun Oct 16 11:49:43 2022  Current lr: 0.08
+Sun Oct 16 11:49:46 2022  Training finished for epoch 3
+Sun Oct 16 11:49:49 2022  Validation finished for epoch 3
+Sun Oct 16 11:49:49 2022  EPOCH: 3, ACC: 0.466667, LOSS: 0.648581, EPOCH_TIME: 6.464772, LR: 0.08, BEST_ACC: 0.666667
+Sun Oct 16 11:49:49 2022  Current lr: 0.1
+Sun Oct 16 11:49:52 2022  Training finished for epoch 4
+Sun Oct 16 11:49:55 2022  Validation finished for epoch 4
+Sun Oct 16 11:49:55 2022  EPOCH: 4, ACC: 0.466667, LOSS: 10.375172, EPOCH_TIME: 6.155018, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:49:55 2022  Current lr: 0.1
+Sun Oct 16 11:49:59 2022  Training finished for epoch 5
+Sun Oct 16 11:50:02 2022  Validation finished for epoch 5
+Sun Oct 16 11:50:02 2022  EPOCH: 5, ACC: 0.333333, LOSS: 0.783795, EPOCH_TIME: 6.130295, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:50:02 2022  Current lr: 0.1
+Sun Oct 16 11:50:05 2022  Training finished for epoch 6
+Sun Oct 16 11:50:08 2022  Validation finished for epoch 6
+Sun Oct 16 11:50:08 2022  EPOCH: 6, ACC: 0.533333, LOSS: 1.550835, EPOCH_TIME: 6.514923, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:50:08 2022  Current lr: 0.1
+Sun Oct 16 11:50:11 2022  Training finished for epoch 7
+Sun Oct 16 11:50:14 2022  Validation finished for epoch 7
+Sun Oct 16 11:50:14 2022  EPOCH: 7, ACC: 0.600000, LOSS: 0.703703, EPOCH_TIME: 6.283505, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:50:14 2022  Current lr: 0.1
+Sun Oct 16 11:50:18 2022  Training finished for epoch 8
+Sun Oct 16 11:50:21 2022  Validation finished for epoch 8
+Sun Oct 16 11:50:21 2022  EPOCH: 8, ACC: 0.533333, LOSS: 0.692239, EPOCH_TIME: 6.140951, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:50:21 2022  Current lr: 0.1
+Sun Oct 16 11:50:24 2022  Training finished for epoch 9
+Sun Oct 16 11:50:26 2022  Validation finished for epoch 9
+Sun Oct 16 11:50:26 2022  EPOCH: 9, ACC: 0.600000, LOSS: 0.741124, EPOCH_TIME: 5.980242, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:50:26 2022  Current lr: 0.1
+Sun Oct 16 11:50:30 2022  Training finished for epoch 10
+Sun Oct 16 11:50:33 2022  Validation finished for epoch 10
+Sun Oct 16 11:50:33 2022  EPOCH: 10, ACC: 0.666667, LOSS: 0.977110, EPOCH_TIME: 6.050061, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:50:33 2022  Current lr: 0.1
+Sun Oct 16 11:50:36 2022  Training finished for epoch 11
+Sun Oct 16 11:50:39 2022  Validation finished for epoch 11
+Sun Oct 16 11:50:39 2022  EPOCH: 11, ACC: 0.466667, LOSS: 0.661859, EPOCH_TIME: 6.130499, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:50:39 2022  Current lr: 0.1
+Sun Oct 16 11:50:42 2022  Training finished for epoch 12
+Sun Oct 16 11:50:45 2022  Validation finished for epoch 12
+Sun Oct 16 11:50:45 2022  EPOCH: 12, ACC: 0.533333, LOSS: 0.771303, EPOCH_TIME: 6.260105, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:50:45 2022  Current lr: 0.1
+Sun Oct 16 11:50:48 2022  Training finished for epoch 13
+Sun Oct 16 11:50:51 2022  Validation finished for epoch 13
+Sun Oct 16 11:50:51 2022  EPOCH: 13, ACC: 0.666667, LOSS: 0.917933, EPOCH_TIME: 6.272468, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:50:51 2022  Current lr: 0.1
+Sun Oct 16 11:50:55 2022  Training finished for epoch 14
+Sun Oct 16 11:50:58 2022  Validation finished for epoch 14
+Sun Oct 16 11:50:58 2022  EPOCH: 14, ACC: 0.600000, LOSS: 0.912419, EPOCH_TIME: 6.325559, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:50:58 2022  Current lr: 0.1
+Sun Oct 16 11:51:01 2022  Training finished for epoch 15
+Sun Oct 16 11:51:04 2022  Validation finished for epoch 15
+Sun Oct 16 11:51:04 2022  EPOCH: 15, ACC: 0.666667, LOSS: 1.016766, EPOCH_TIME: 6.229147, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:51:04 2022  Current lr: 0.1
+Sun Oct 16 11:51:07 2022  Training finished for epoch 16
+Sun Oct 16 11:51:10 2022  Validation finished for epoch 16
+Sun Oct 16 11:51:10 2022  EPOCH: 16, ACC: 0.666667, LOSS: 1.141302, EPOCH_TIME: 6.029053, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:51:10 2022  Current lr: 0.1
+Sun Oct 16 11:51:13 2022  Training finished for epoch 17
+Sun Oct 16 11:51:16 2022  Validation finished for epoch 17
+Sun Oct 16 11:51:16 2022  EPOCH: 17, ACC: 0.400000, LOSS: 0.831611, EPOCH_TIME: 5.971854, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:51:16 2022  Current lr: 0.1
+Sun Oct 16 11:51:19 2022  Training finished for epoch 18
+Sun Oct 16 11:51:22 2022  Validation finished for epoch 18
+Sun Oct 16 11:51:22 2022  EPOCH: 18, ACC: 0.666667, LOSS: 1.174739, EPOCH_TIME: 5.974489, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:51:22 2022  Current lr: 0.1
+Sun Oct 16 11:51:25 2022  Training finished for epoch 19
+Sun Oct 16 11:51:28 2022  Validation finished for epoch 19
+Sun Oct 16 11:51:28 2022  EPOCH: 19, ACC: 0.666667, LOSS: 0.960918, EPOCH_TIME: 5.927456, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:51:28 2022  Current lr: 0.1
+Sun Oct 16 11:51:31 2022  Training finished for epoch 20
+Sun Oct 16 11:51:34 2022  Validation finished for epoch 20
+Sun Oct 16 11:51:34 2022  EPOCH: 20, ACC: 0.666667, LOSS: 1.123578, EPOCH_TIME: 6.038221, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:51:34 2022  Current lr: 0.1
+Sun Oct 16 11:51:37 2022  Training finished for epoch 21
+Sun Oct 16 11:51:40 2022  Validation finished for epoch 21
+Sun Oct 16 11:51:40 2022  EPOCH: 21, ACC: 0.533333, LOSS: 1.049476, EPOCH_TIME: 5.913781, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:51:40 2022  Current lr: 0.1
+Sun Oct 16 11:51:43 2022  Training finished for epoch 22
+Sun Oct 16 11:51:46 2022  Validation finished for epoch 22
+Sun Oct 16 11:51:46 2022  EPOCH: 22, ACC: 0.533333, LOSS: 0.898737, EPOCH_TIME: 6.066983, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:51:46 2022  Current lr: 0.1
+Sun Oct 16 11:51:49 2022  Training finished for epoch 23
+Sun Oct 16 11:51:52 2022  Validation finished for epoch 23
+Sun Oct 16 11:51:52 2022  EPOCH: 23, ACC: 0.466667, LOSS: 0.788083, EPOCH_TIME: 5.986152, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:51:52 2022  Current lr: 0.1
+Sun Oct 16 11:51:55 2022  Training finished for epoch 24
+Sun Oct 16 11:51:58 2022  Validation finished for epoch 24
+Sun Oct 16 11:51:58 2022  EPOCH: 24, ACC: 0.600000, LOSS: 1.067782, EPOCH_TIME: 6.059752, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:51:58 2022  Current lr: 0.1
+Sun Oct 16 11:52:01 2022  Training finished for epoch 25
+Sun Oct 16 11:52:04 2022  Validation finished for epoch 25
+Sun Oct 16 11:52:04 2022  EPOCH: 25, ACC: 0.666667, LOSS: 1.312131, EPOCH_TIME: 5.946766, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:52:04 2022  Current lr: 0.1
+Sun Oct 16 11:52:07 2022  Training finished for epoch 26
+Sun Oct 16 11:52:10 2022  Validation finished for epoch 26
+Sun Oct 16 11:52:10 2022  EPOCH: 26, ACC: 0.533333, LOSS: 0.702877, EPOCH_TIME: 5.822290, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:52:10 2022  Current lr: 0.1
+Sun Oct 16 11:52:13 2022  Training finished for epoch 27
+Sun Oct 16 11:52:15 2022  Validation finished for epoch 27
+Sun Oct 16 11:52:15 2022  EPOCH: 27, ACC: 0.533333, LOSS: 0.850869, EPOCH_TIME: 5.841378, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:52:15 2022  Current lr: 0.1
+Sun Oct 16 11:52:19 2022  Training finished for epoch 28
+Sun Oct 16 11:52:21 2022  Validation finished for epoch 28
+Sun Oct 16 11:52:21 2022  EPOCH: 28, ACC: 0.600000, LOSS: 1.252474, EPOCH_TIME: 6.066915, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:52:21 2022  Current lr: 0.1
+Sun Oct 16 11:52:25 2022  Training finished for epoch 29
+Sun Oct 16 11:52:28 2022  Validation finished for epoch 29
+Sun Oct 16 11:52:28 2022  EPOCH: 29, ACC: 0.466667, LOSS: 0.668127, EPOCH_TIME: 6.414344, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:52:28 2022  Current lr: 0.1
+Sun Oct 16 11:52:31 2022  Training finished for epoch 30
+Sun Oct 16 11:52:34 2022  Validation finished for epoch 30
+Sun Oct 16 11:52:34 2022  EPOCH: 30, ACC: 0.600000, LOSS: 1.033798, EPOCH_TIME: 6.210279, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:52:34 2022  Current lr: 0.1
+Sun Oct 16 11:52:37 2022  Training finished for epoch 31
+Sun Oct 16 11:52:40 2022  Validation finished for epoch 31
+Sun Oct 16 11:52:40 2022  EPOCH: 31, ACC: 0.466667, LOSS: 0.735644, EPOCH_TIME: 6.205249, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:52:40 2022  Current lr: 0.1
+Sun Oct 16 11:52:43 2022  Training finished for epoch 32
+Sun Oct 16 11:52:46 2022  Validation finished for epoch 32
+Sun Oct 16 11:52:46 2022  EPOCH: 32, ACC: 0.400000, LOSS: 0.807041, EPOCH_TIME: 6.121124, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:52:46 2022  Current lr: 0.1
+Sun Oct 16 11:52:50 2022  Training finished for epoch 33
+Sun Oct 16 11:52:53 2022  Validation finished for epoch 33
+Sun Oct 16 11:52:53 2022  EPOCH: 33, ACC: 0.466667, LOSS: 2.038995, EPOCH_TIME: 6.241691, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:52:53 2022  Current lr: 0.1
+Sun Oct 16 11:52:56 2022  Training finished for epoch 34
+Sun Oct 16 11:52:59 2022  Validation finished for epoch 34
+Sun Oct 16 11:52:59 2022  EPOCH: 34, ACC: 0.666667, LOSS: 4.988504, EPOCH_TIME: 6.099450, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:52:59 2022  Current lr: 0.1
+Sun Oct 16 11:53:02 2022  Training finished for epoch 35
+Sun Oct 16 11:53:04 2022  Validation finished for epoch 35
+Sun Oct 16 11:53:05 2022  EPOCH: 35, ACC: 0.600000, LOSS: 3.310388, EPOCH_TIME: 5.789834, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:53:05 2022  Current lr: 0.1
+Sun Oct 16 11:53:07 2022  Training finished for epoch 36
+Sun Oct 16 11:53:10 2022  Validation finished for epoch 36
+Sun Oct 16 11:53:10 2022  EPOCH: 36, ACC: 0.666667, LOSS: 1.818680, EPOCH_TIME: 5.620621, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:53:10 2022  Current lr: 0.1
+Sun Oct 16 11:53:13 2022  Training finished for epoch 37
+Sun Oct 16 11:53:16 2022  Validation finished for epoch 37
+Sun Oct 16 11:53:16 2022  EPOCH: 37, ACC: 0.666667, LOSS: 0.986108, EPOCH_TIME: 5.750830, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:53:16 2022  Current lr: 0.1
+Sun Oct 16 11:53:19 2022  Training finished for epoch 38
+Sun Oct 16 11:53:21 2022  Validation finished for epoch 38
+Sun Oct 16 11:53:21 2022  EPOCH: 38, ACC: 0.666667, LOSS: 1.137184, EPOCH_TIME: 5.597802, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:53:21 2022  Current lr: 0.1
+Sun Oct 16 11:53:24 2022  Training finished for epoch 39
+Sun Oct 16 11:53:27 2022  Validation finished for epoch 39
+Sun Oct 16 11:53:27 2022  EPOCH: 39, ACC: 0.466667, LOSS: 1.101028, EPOCH_TIME: 5.566370, LR: 0.1, BEST_ACC: 0.666667
+Sun Oct 16 11:53:27 2022  Current lr: 0.1
+Sun Oct 16 11:53:30 2022  Training finished for epoch 40
+Sun Oct 16 11:53:33 2022  Validation finished for epoch 40
+Sun Oct 16 11:53:33 2022  EPOCH: 40, ACC: 0.733333, LOSS: 1.321274, EPOCH_TIME: 5.788085, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:53:33 2022  Current lr: 0.1
+Sun Oct 16 11:53:36 2022  Training finished for epoch 41
+Sun Oct 16 11:53:38 2022  Validation finished for epoch 41
+Sun Oct 16 11:53:38 2022  EPOCH: 41, ACC: 0.533333, LOSS: 1.089611, EPOCH_TIME: 5.446312, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:53:38 2022  Current lr: 0.1
+Sun Oct 16 11:53:41 2022  Training finished for epoch 42
+Sun Oct 16 11:53:44 2022  Validation finished for epoch 42
+Sun Oct 16 11:53:44 2022  EPOCH: 42, ACC: 0.400000, LOSS: 1.067828, EPOCH_TIME: 5.497331, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:53:44 2022  Current lr: 0.1
+Sun Oct 16 11:53:47 2022  Training finished for epoch 43
+Sun Oct 16 11:53:49 2022  Validation finished for epoch 43
+Sun Oct 16 11:53:49 2022  EPOCH: 43, ACC: 0.533333, LOSS: 2.986588, EPOCH_TIME: 5.461828, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:53:49 2022  Current lr: 0.1
+Sun Oct 16 11:53:52 2022  Training finished for epoch 44
+Sun Oct 16 11:53:55 2022  Validation finished for epoch 44
+Sun Oct 16 11:53:55 2022  EPOCH: 44, ACC: 0.600000, LOSS: 1.942976, EPOCH_TIME: 5.542945, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:53:55 2022  Current lr: 0.1
+Sun Oct 16 11:53:58 2022  Training finished for epoch 45
+Sun Oct 16 11:54:01 2022  Validation finished for epoch 45
+Sun Oct 16 11:54:01 2022  EPOCH: 45, ACC: 0.733333, LOSS: 1.688893, EPOCH_TIME: 5.960526, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:54:01 2022  Current lr: 0.1
+Sun Oct 16 11:54:04 2022  Training finished for epoch 46
+Sun Oct 16 11:54:06 2022  Validation finished for epoch 46
+Sun Oct 16 11:54:06 2022  EPOCH: 46, ACC: 0.400000, LOSS: 1.258846, EPOCH_TIME: 5.631307, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:54:06 2022  Current lr: 0.1
+Sun Oct 16 11:54:09 2022  Training finished for epoch 47
+Sun Oct 16 11:54:12 2022  Validation finished for epoch 47
+Sun Oct 16 11:54:12 2022  EPOCH: 47, ACC: 0.466667, LOSS: 1.367390, EPOCH_TIME: 5.643461, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:54:12 2022  Current lr: 0.1
+Sun Oct 16 11:54:15 2022  Training finished for epoch 48
+Sun Oct 16 11:54:18 2022  Validation finished for epoch 48
+Sun Oct 16 11:54:18 2022  EPOCH: 48, ACC: 0.533333, LOSS: 1.045005, EPOCH_TIME: 5.710320, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:54:18 2022  Current lr: 0.1
+Sun Oct 16 11:54:21 2022  Training finished for epoch 49
+Sun Oct 16 11:54:23 2022  Validation finished for epoch 49
+Sun Oct 16 11:54:23 2022  EPOCH: 49, ACC: 0.600000, LOSS: 0.990969, EPOCH_TIME: 5.334108, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:54:23 2022  Current lr: 0.1
+Sun Oct 16 11:54:26 2022  Training finished for epoch 50
+Sun Oct 16 11:54:29 2022  Validation finished for epoch 50
+Sun Oct 16 11:54:29 2022  EPOCH: 50, ACC: 0.466667, LOSS: 1.941977, EPOCH_TIME: 5.588874, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:54:29 2022  Current lr: 0.1
+Sun Oct 16 11:54:32 2022  Training finished for epoch 51
+Sun Oct 16 11:54:34 2022  Validation finished for epoch 51
+Sun Oct 16 11:54:34 2022  EPOCH: 51, ACC: 0.466667, LOSS: 2.643280, EPOCH_TIME: 5.432804, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:54:34 2022  Current lr: 0.1
+Sun Oct 16 11:54:37 2022  Training finished for epoch 52
+Sun Oct 16 11:54:39 2022  Validation finished for epoch 52
+Sun Oct 16 11:54:39 2022  EPOCH: 52, ACC: 0.466667, LOSS: 2.710068, EPOCH_TIME: 5.367207, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:54:39 2022  Current lr: 0.1
+Sun Oct 16 11:54:42 2022  Training finished for epoch 53
+Sun Oct 16 11:54:45 2022  Validation finished for epoch 53
+Sun Oct 16 11:54:45 2022  EPOCH: 53, ACC: 0.666667, LOSS: 2.732806, EPOCH_TIME: 5.480688, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:54:45 2022  Current lr: 0.1
+Sun Oct 16 11:54:48 2022  Training finished for epoch 54
+Sun Oct 16 11:54:50 2022  Validation finished for epoch 54
+Sun Oct 16 11:54:50 2022  EPOCH: 54, ACC: 0.533333, LOSS: 2.181720, EPOCH_TIME: 5.508606, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:54:50 2022  Current lr: 0.1
+Sun Oct 16 11:54:53 2022  Training finished for epoch 55
+Sun Oct 16 11:54:56 2022  Validation finished for epoch 55
+Sun Oct 16 11:54:56 2022  EPOCH: 55, ACC: 0.533333, LOSS: 2.686246, EPOCH_TIME: 5.647801, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:54:56 2022  Current lr: 0.1
+Sun Oct 16 11:54:59 2022  Training finished for epoch 56
+Sun Oct 16 11:55:02 2022  Validation finished for epoch 56
+Sun Oct 16 11:55:02 2022  EPOCH: 56, ACC: 0.533333, LOSS: 2.054343, EPOCH_TIME: 5.709107, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:55:02 2022  Current lr: 0.1
+Sun Oct 16 11:55:05 2022  Training finished for epoch 57
+Sun Oct 16 11:55:08 2022  Validation finished for epoch 57
+Sun Oct 16 11:55:08 2022  EPOCH: 57, ACC: 0.466667, LOSS: 1.782542, EPOCH_TIME: 5.773410, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:55:08 2022  Current lr: 0.1
+Sun Oct 16 11:55:11 2022  Training finished for epoch 58
+Sun Oct 16 11:55:13 2022  Validation finished for epoch 58
+Sun Oct 16 11:55:13 2022  EPOCH: 58, ACC: 0.466667, LOSS: 2.696637, EPOCH_TIME: 5.639401, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:55:13 2022  Current lr: 0.1
+Sun Oct 16 11:55:16 2022  Training finished for epoch 59
+Sun Oct 16 11:55:19 2022  Validation finished for epoch 59
+Sun Oct 16 11:55:19 2022  EPOCH: 59, ACC: 0.400000, LOSS: 2.586497, EPOCH_TIME: 5.469873, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 11:55:19 2022  Current lr: 0.010000000000000002
+Sun Oct 16 11:55:22 2022  Training finished for epoch 60
+Sun Oct 16 11:56:14 2022  [0mbatch_size: 10[0m
+Sun Oct 16 11:56:14 2022  [0mclass_num: 2[0m
+Sun Oct 16 11:56:14 2022  [35mconfig: ./config/config.yaml[0m
+Sun Oct 16 11:56:14 2022  [0mcuda_visible_device: 0[0m
+Sun Oct 16 11:56:14 2022  [0mdata: adni[0m
+Sun Oct 16 11:56:14 2022  [0mdata_param: {'train_data_param': {'data_path': '/data/datasets/SyntheticDataForKernelTransformer/train_data2.npy', 'label_path': '/data/datasets/SyntheticDataForKernelTransformer/train_label2.pkl', 'random_choose': True, 'center_choose': False, 'random_noise': True, 'random_scale': True, 'window_size': 200, 'final_size': 180, 'num_skip_frame': None, 'decouple_spatial': False}, 'val_data_param': {'data_path': '/data/datasets/SyntheticDataForKernelTransformer/test_data2.npy', 'label_path': '/data/datasets/SyntheticDataForKernelTransformer/test_label2.pkl', 'random_choose': True, 'center_choose': False, 'random_noise': False, 'random_scale': False, 'window_size': 200, 'final_size': 180, 'num_skip_frame': None, 'decouple_spatial': False, 'augtimes': 1}}[0m
+Sun Oct 16 11:56:14 2022  [0mdebug: False[0m
+Sun Oct 16 11:56:14 2022  [0mdevice_id: [0][0m
+Sun Oct 16 11:56:14 2022  [0mfreeze_keys: [][0m
+Sun Oct 16 11:56:14 2022  [0mgrad_clip: 0[0m
+Sun Oct 16 11:56:14 2022  [0mignore_weights: ['fc'][0m
+Sun Oct 16 11:56:14 2022  [0mlabel_smoothing_num: 0[0m
+Sun Oct 16 11:56:14 2022  [0mlast_model: None[0m
+Sun Oct 16 11:56:14 2022  [0mloss: cross_entropy[0m
+Sun Oct 16 11:56:14 2022  [0mlr: 0.1[0m
+Sun Oct 16 11:56:14 2022  [0mlr_decay_ratio: 0.1[0m
+Sun Oct 16 11:56:14 2022  [0mlr_multi_keys: [][0m
+Sun Oct 16 11:56:14 2022  [0mlr_param: {'step': [60, 80]}[0m
+Sun Oct 16 11:56:14 2022  [0mlr_scheduler: reduce_by_epoch[0m
+Sun Oct 16 11:56:14 2022  [0mls_param: {}[0m
+Sun Oct 16 11:56:14 2022  [0mmax_epoch: 100[0m
+Sun Oct 16 11:56:14 2022  [0mmix_up_num: 0[0m
+Sun Oct 16 11:56:14 2022  [0mmode: train_val[0m
+Sun Oct 16 11:56:14 2022  [0mmodel: dstanet[0m
+Sun Oct 16 11:56:14 2022  [0mmodel_param: {'num_point': 42, 'num_frame': 180, 'num_subset': 6, 'num_channel': 6, 'num_person': 1, 'glo_reg_s': False, 'att_s': True, 'glo_reg_t': False, 'att_t': False, 'dropout': 0, 'attentiondrop': 0, 'dropout2d': 0, 'use_spatial_att': True, 'use_temporal_att': False, 'use_pet': True, 'use_pes': True, 'kernelattention': True, 'diffusion': 5, 'config': [[64, 64, 16, 1], [64, 64, 16, 1], [64, 128, 32, 2], [128, 128, 32, 1]]}[0m
+Sun Oct 16 11:56:14 2022  [0mmodel_saved_name: ./work_dir/adni/[0m
+Sun Oct 16 11:56:14 2022  [0mnum_epoch_per_save: 200[0m
+Sun Oct 16 11:56:14 2022  [0mnum_subsets: 3[0m
+Sun Oct 16 11:56:14 2022  [0moptimizer: sgd_nev[0m
+Sun Oct 16 11:56:14 2022  [0mpin_memory: False[0m
+Sun Oct 16 11:56:14 2022  [0mpre_trained_model: None[0m
+Sun Oct 16 11:56:14 2022  [0mstep: [80][0m
+Sun Oct 16 11:56:14 2022  [0mtrain: classify[0m
+Sun Oct 16 11:56:14 2022  [0mval_first: False[0m
+Sun Oct 16 11:56:14 2022  [0mwarm_up_epoch: 5[0m
+Sun Oct 16 11:56:14 2022  [0mwd: 0.0005[0m
+Sun Oct 16 11:56:14 2022  [0mworker: 32[0m
+Sun Oct 16 11:56:14 2022  Operation finished
+
+Sun Oct 16 11:56:14 2022  work dir: ./work_dir/adni/
+Sun Oct 16 11:56:14 2022  Model load finished: dstanet mode: train
+Sun Oct 16 11:56:18 2022  copy model to gpu
+Sun Oct 16 11:56:18 2022  Using SGD with momentum 0.9and nesterov
+Sun Oct 16 11:56:18 2022  no pretrained optimizer is loaded
+Sun Oct 16 11:56:18 2022  Using loss: cross_entropy
+Sun Oct 16 11:56:18 2022  Data load finished: adni
+Sun Oct 16 11:56:18 2022  lr scheduler: Reduce by epoch, step: [60, 80]
+Sun Oct 16 11:56:18 2022  start epoch 0 -> max epoch 100
+Sun Oct 16 11:56:18 2022  Current lr: 0.02
+Sun Oct 16 12:01:59 2022  [0mbatch_size: 10[0m
+Sun Oct 16 12:01:59 2022  [0mclass_num: 2[0m
+Sun Oct 16 12:01:59 2022  [35mconfig: ./config/config.yaml[0m
+Sun Oct 16 12:01:59 2022  [0mcuda_visible_device: 0[0m
+Sun Oct 16 12:01:59 2022  [0mdata: adni[0m
+Sun Oct 16 12:01:59 2022  [0mdata_param: {'train_data_param': {'data_path': '/data/datasets/SyntheticDataForKernelTransformer/train_data2.npy', 'label_path': '/data/datasets/SyntheticDataForKernelTransformer/train_label2.pkl', 'random_choose': True, 'center_choose': False, 'random_noise': True, 'random_scale': True, 'window_size': 200, 'final_size': 180, 'num_skip_frame': None, 'decouple_spatial': False}, 'val_data_param': {'data_path': '/data/datasets/SyntheticDataForKernelTransformer/test_data2.npy', 'label_path': '/data/datasets/SyntheticDataForKernelTransformer/test_label2.pkl', 'random_choose': True, 'center_choose': False, 'random_noise': False, 'random_scale': False, 'window_size': 200, 'final_size': 180, 'num_skip_frame': None, 'decouple_spatial': False, 'augtimes': 1}}[0m
+Sun Oct 16 12:01:59 2022  [0mdebug: False[0m
+Sun Oct 16 12:01:59 2022  [0mdevice_id: [0][0m
+Sun Oct 16 12:01:59 2022  [0mfreeze_keys: [][0m
+Sun Oct 16 12:01:59 2022  [0mgrad_clip: 0[0m
+Sun Oct 16 12:01:59 2022  [0mignore_weights: ['fc'][0m
+Sun Oct 16 12:01:59 2022  [0mlabel_smoothing_num: 0[0m
+Sun Oct 16 12:01:59 2022  [0mlast_model: None[0m
+Sun Oct 16 12:01:59 2022  [0mloss: cross_entropy[0m
+Sun Oct 16 12:01:59 2022  [0mlr: 0.1[0m
+Sun Oct 16 12:01:59 2022  [0mlr_decay_ratio: 0.1[0m
+Sun Oct 16 12:01:59 2022  [0mlr_multi_keys: [][0m
+Sun Oct 16 12:01:59 2022  [0mlr_param: {'step': [60, 80]}[0m
+Sun Oct 16 12:01:59 2022  [0mlr_scheduler: reduce_by_epoch[0m
+Sun Oct 16 12:01:59 2022  [0mls_param: {}[0m
+Sun Oct 16 12:01:59 2022  [0mmax_epoch: 100[0m
+Sun Oct 16 12:01:59 2022  [0mmix_up_num: 0[0m
+Sun Oct 16 12:01:59 2022  [0mmode: train_val[0m
+Sun Oct 16 12:01:59 2022  [0mmodel: dstanet[0m
+Sun Oct 16 12:01:59 2022  [0mmodel_param: {'num_point': 42, 'num_frame': 180, 'num_subset': 6, 'num_channel': 6, 'num_person': 1, 'glo_reg_s': False, 'att_s': True, 'glo_reg_t': False, 'att_t': False, 'dropout': 0, 'attentiondrop': 0, 'dropout2d': 0, 'use_spatial_att': True, 'use_temporal_att': False, 'use_pet': True, 'use_pes': True, 'kernelattention': True, 'diffusion': 5, 'config': [[64, 64, 16, 1], [64, 64, 16, 1], [64, 128, 32, 2], [128, 128, 32, 1]]}[0m
+Sun Oct 16 12:01:59 2022  [0mmodel_saved_name: ./work_dir/adni/[0m
+Sun Oct 16 12:01:59 2022  [0mnum_epoch_per_save: 200[0m
+Sun Oct 16 12:01:59 2022  [0moptimizer: sgd_nev[0m
+Sun Oct 16 12:01:59 2022  [0mpin_memory: False[0m
+Sun Oct 16 12:01:59 2022  [0mpre_trained_model: None[0m
+Sun Oct 16 12:01:59 2022  [0mstep: [80][0m
+Sun Oct 16 12:01:59 2022  [0mtrain: classify[0m
+Sun Oct 16 12:01:59 2022  [0mval_first: False[0m
+Sun Oct 16 12:01:59 2022  [0mwarm_up_epoch: 5[0m
+Sun Oct 16 12:01:59 2022  [0mwd: 0.0005[0m
+Sun Oct 16 12:01:59 2022  [0mworker: 32[0m
+Sun Oct 16 12:01:59 2022  Operation finished
+
+Sun Oct 16 12:01:59 2022  work dir: ./work_dir/adni/
+Sun Oct 16 12:01:59 2022  Model load finished: dstanet mode: train
+Sun Oct 16 12:02:03 2022  copy model to gpu
+Sun Oct 16 12:02:03 2022  Using SGD with momentum 0.9and nesterov
+Sun Oct 16 12:02:03 2022  no pretrained optimizer is loaded
+Sun Oct 16 12:02:03 2022  Using loss: cross_entropy
+Sun Oct 16 12:02:03 2022  Data load finished: adni
+Sun Oct 16 12:02:03 2022  lr scheduler: Reduce by epoch, step: [60, 80]
+Sun Oct 16 12:02:03 2022  start epoch 0 -> max epoch 100
+Sun Oct 16 12:02:03 2022  Current lr: 0.02
+Sun Oct 16 12:02:06 2022  Training finished for epoch 0
+Sun Oct 16 12:02:08 2022  Validation finished for epoch 0
+Sun Oct 16 12:02:08 2022  EPOCH: 0, ACC: 0.466667, LOSS: 7.751463, EPOCH_TIME: 5.231984, LR: 0.02, BEST_ACC: 0.466667
+Sun Oct 16 12:02:08 2022  Current lr: 0.04
+Sun Oct 16 12:02:11 2022  Training finished for epoch 1
+Sun Oct 16 12:02:13 2022  Validation finished for epoch 1
+Sun Oct 16 12:02:13 2022  EPOCH: 1, ACC: 0.533333, LOSS: 5.090579, EPOCH_TIME: 5.480544, LR: 0.04, BEST_ACC: 0.533333
+Sun Oct 16 12:02:13 2022  Current lr: 0.06000000000000001
+Sun Oct 16 12:02:16 2022  Training finished for epoch 2
+Sun Oct 16 12:02:19 2022  Validation finished for epoch 2
+Sun Oct 16 12:02:19 2022  EPOCH: 2, ACC: 0.733333, LOSS: 2.053773, EPOCH_TIME: 5.542434, LR: 0.06000000000000001, BEST_ACC: 0.733333
+Sun Oct 16 12:02:19 2022  Current lr: 0.08
+Sun Oct 16 12:02:22 2022  Training finished for epoch 3
+Sun Oct 16 12:02:24 2022  Validation finished for epoch 3
+Sun Oct 16 12:02:24 2022  EPOCH: 3, ACC: 0.533333, LOSS: 10.083383, EPOCH_TIME: 5.497716, LR: 0.08, BEST_ACC: 0.733333
+Sun Oct 16 12:02:24 2022  Current lr: 0.1
+Sun Oct 16 12:02:27 2022  Training finished for epoch 4
+Sun Oct 16 12:02:30 2022  Validation finished for epoch 4
+Sun Oct 16 12:02:30 2022  EPOCH: 4, ACC: 0.533333, LOSS: 3.080682, EPOCH_TIME: 5.668123, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 12:02:30 2022  Current lr: 0.1
+Sun Oct 16 12:02:33 2022  Training finished for epoch 5
+Sun Oct 16 12:02:36 2022  Validation finished for epoch 5
+Sun Oct 16 12:02:36 2022  EPOCH: 5, ACC: 0.466667, LOSS: 0.858506, EPOCH_TIME: 5.464248, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 12:02:36 2022  Current lr: 0.1
+Sun Oct 16 12:02:39 2022  Training finished for epoch 6
+Sun Oct 16 12:02:41 2022  Validation finished for epoch 6
+Sun Oct 16 12:02:41 2022  EPOCH: 6, ACC: 0.466667, LOSS: 0.642944, EPOCH_TIME: 5.578399, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 12:02:41 2022  Current lr: 0.1
+Sun Oct 16 12:02:44 2022  Training finished for epoch 7
+Sun Oct 16 12:02:47 2022  Validation finished for epoch 7
+Sun Oct 16 12:02:47 2022  EPOCH: 7, ACC: 0.666667, LOSS: 0.660981, EPOCH_TIME: 5.740485, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 12:02:47 2022  Current lr: 0.1
+Sun Oct 16 12:02:50 2022  Training finished for epoch 8
+Sun Oct 16 12:02:52 2022  Validation finished for epoch 8
+Sun Oct 16 12:02:52 2022  EPOCH: 8, ACC: 0.666667, LOSS: 0.636995, EPOCH_TIME: 5.556866, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 12:02:52 2022  Current lr: 0.1
+Sun Oct 16 12:02:55 2022  Training finished for epoch 9
+Sun Oct 16 12:02:58 2022  Validation finished for epoch 9
+Sun Oct 16 12:02:58 2022  EPOCH: 9, ACC: 0.600000, LOSS: 0.624688, EPOCH_TIME: 5.595842, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 12:02:58 2022  Current lr: 0.1
+Sun Oct 16 12:03:01 2022  Training finished for epoch 10
+Sun Oct 16 12:03:04 2022  Validation finished for epoch 10
+Sun Oct 16 12:03:04 2022  EPOCH: 10, ACC: 0.733333, LOSS: 0.731930, EPOCH_TIME: 5.616033, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 12:03:04 2022  Current lr: 0.1
+Sun Oct 16 12:03:07 2022  Training finished for epoch 11
+Sun Oct 16 12:03:09 2022  Validation finished for epoch 11
+Sun Oct 16 12:03:09 2022  EPOCH: 11, ACC: 0.533333, LOSS: 0.981109, EPOCH_TIME: 5.598470, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 12:03:09 2022  Current lr: 0.1
+Sun Oct 16 12:03:12 2022  Training finished for epoch 12
+Sun Oct 16 12:03:15 2022  Validation finished for epoch 12
+Sun Oct 16 12:03:15 2022  EPOCH: 12, ACC: 0.600000, LOSS: 0.663012, EPOCH_TIME: 5.435513, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 12:03:15 2022  Current lr: 0.1
+Sun Oct 16 12:03:18 2022  Training finished for epoch 13
+Sun Oct 16 12:03:20 2022  Validation finished for epoch 13
+Sun Oct 16 12:03:20 2022  EPOCH: 13, ACC: 0.666667, LOSS: 0.680886, EPOCH_TIME: 5.625627, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 12:03:20 2022  Current lr: 0.1
+Sun Oct 16 12:03:23 2022  Training finished for epoch 14
+Sun Oct 16 12:03:26 2022  Validation finished for epoch 14
+Sun Oct 16 12:03:26 2022  EPOCH: 14, ACC: 0.600000, LOSS: 0.644097, EPOCH_TIME: 5.977842, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 12:03:26 2022  Current lr: 0.1
+Sun Oct 16 12:03:29 2022  Training finished for epoch 15
+Sun Oct 16 12:03:32 2022  Validation finished for epoch 15
+Sun Oct 16 12:03:32 2022  EPOCH: 15, ACC: 0.600000, LOSS: 0.789254, EPOCH_TIME: 5.800360, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 12:03:32 2022  Current lr: 0.1
+Sun Oct 16 12:03:35 2022  Training finished for epoch 16
+Sun Oct 16 12:03:38 2022  Validation finished for epoch 16
+Sun Oct 16 12:03:38 2022  EPOCH: 16, ACC: 0.733333, LOSS: 0.809454, EPOCH_TIME: 5.814910, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 12:03:38 2022  Current lr: 0.1
+Sun Oct 16 12:03:42 2022  Training finished for epoch 17
+Sun Oct 16 12:03:45 2022  Validation finished for epoch 17
+Sun Oct 16 12:03:45 2022  EPOCH: 17, ACC: 0.666667, LOSS: 1.119193, EPOCH_TIME: 6.596881, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 12:03:45 2022  Current lr: 0.1
+Sun Oct 16 12:03:48 2022  Training finished for epoch 18
+Sun Oct 16 12:03:51 2022  Validation finished for epoch 18
+Sun Oct 16 12:03:51 2022  EPOCH: 18, ACC: 0.733333, LOSS: 1.994064, EPOCH_TIME: 6.193291, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 12:03:51 2022  Current lr: 0.1
+Sun Oct 16 12:03:54 2022  Training finished for epoch 19
+Sun Oct 16 12:03:57 2022  Validation finished for epoch 19
+Sun Oct 16 12:03:57 2022  EPOCH: 19, ACC: 0.600000, LOSS: 0.609697, EPOCH_TIME: 5.836324, LR: 0.1, BEST_ACC: 0.733333
+Sun Oct 16 12:03:57 2022  Current lr: 0.1
+Sun Oct 16 12:04:00 2022  Training finished for epoch 20
+Sun Oct 16 12:04:02 2022  Validation finished for epoch 20
+Sun Oct 16 12:04:02 2022  EPOCH: 20, ACC: 0.800000, LOSS: 0.609293, EPOCH_TIME: 5.739341, LR: 0.1, BEST_ACC: 0.800000
+Sun Oct 16 12:04:02 2022  Current lr: 0.1
+Sun Oct 16 12:04:05 2022  Training finished for epoch 21
+Sun Oct 16 12:04:08 2022  Validation finished for epoch 21
+Sun Oct 16 12:04:08 2022  EPOCH: 21, ACC: 0.600000, LOSS: 0.711865, EPOCH_TIME: 5.601798, LR: 0.1, BEST_ACC: 0.800000
+Sun Oct 16 12:04:08 2022  Current lr: 0.1
