@@ -8,6 +8,7 @@ Synthetic data can be downloaded from https://drive.google.com/file/d/17ju4HiZOX
 Please note that the synthetic data are provided only to facilitate running the code and release of the original data used in the paper is out of the authority of the author. Please refer to the corresponding data resource.
 
 Citation Information:
+
 @ARTICLE{9763540,
   author={Zhang, Jianjia and Zhou, Luping and Wang, Lei and Liu, Mengting and Shen, Dinggang},
   journal={IEEE Transactions on Medical Imaging}, 
