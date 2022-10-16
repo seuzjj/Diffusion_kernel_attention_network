@@ -1,1 +1,1 @@
-# Diffusion_kernel_ttention_etwork
+# Diffusion_kernel_attention_network
